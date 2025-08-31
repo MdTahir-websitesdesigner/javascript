@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>index</title>
+    <style>
+        .menu-bar {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .dot span {
+            background: red;
+            border: 1px solid white;
+        }
+
+        #countdown {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        #countdown ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 10px;
+        }
+
+        #countdown li {
+            display: inline-block;
+            text-align: center;
+        }
+
+        #countdown span {
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .label {
+            font-size: 17px;
+        }
+
+        .separator {
+            font-size: 30px;
+            color: #e57373;
+            line-height: 48px;
+        }
+
+        .add-cart:hover a {
+            z-index: 1;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .sound {
+            background-image: linear-gradient(271deg, #000000bf, #020202)
+        }
+    </style>
+</head>
+
+<body>
+    <header class="border-b-[0.5px] border-[#00000038] bg-white" id="header">
+        <div class="main-container">
+            <nav>
+                <div class="lg:flex items-center">
+                    <div class="py-4 flex items-center justify-between">
+                        <a href="#" class="text-black font-bold text-[24px]">Exclusive</a>
+                        <a href="javascript:void(0)" onclick="toggleMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 text-black lg:hidden">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div id="menu-bar" class="lg:flex items-center menu-bar  w-full">
+                        <ul class="lg:flex gap-10 mx-auto">
+                            <li>
+                                <a href="#"
+                                    class="text-black text-base font-normal py-4 inline-block underline">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-black text-base font-normal py-4 inline-block">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-black text-base font-normal py-4 inline-block">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-black text-base font-normal py-4 inline-block">Sign Up</a>
+                            </li>
+                        </ul>
+                        <div class="flex gap-2 mb-[14px] lg:mb-0">
+                            <div class="relative">
+                                <input type="search" placeholder="What are you looking for?"
+                                    class="bg-[#F5F5F5] rounded text-[12px] py-2 px-4 w-[203px]" />
+                                <img src="images/Component 2.svg" alt="" class="absolute top-[5px] right-[4px]" />
+                            </div>
+                            <a href="#"><img src="images/Wishlist.svg" alt="" /></a>
+                            <a href="#"><img src="images/Cart1 with buy.svg" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="sec-1 py-[50px]">
+        <div class="main-container">
+            <div class="flex flex-wrap mx-[-15px] justify-between">
+                <div class="lg:w-3/12 w-full px-5">
+                    <div class="">
+                        <ul>
+                            <li class="mb-2 flex items-center justify-between">
+                                <a href="#" class="text-base text-black font-normal inline-block">Woman’s
+                                    Fashion</a><img src="images/DropDown.svg" alt="" />
+                            </li>
+                            <li class="mb-2 flex items-center justify-between">
+                                <a href="#" class="text-base text-black font-normal inline-block">Men’s Fashion</a><img
+                                    src="images/DropDown.svg" alt="" />
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Electronics</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Home &
+                                    Lifestyle</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Medicine</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Sports &
+                                    Outdoor</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Groceries &
+                                    Pets</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Health &
+                                    Beauty</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-9/12 w-full px-3.5">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-black">
+                                <div class="flex justify-between items-center p-[10px] md:p-[30px]">
+                                    <div>
+                                        <div class="flex gap-3 items-center mb-3">
+                                            <img src="images/1200px-Apple_gray_logo 1.svg" alt=""
+                                                class="w-[20px] md:w-[9%]" />
+                                            <h4 class="text-[#FAFAFA] md:text-base text-[13px]">
+                                                iPhone 14 Series
+                                            </h4>
+                                        </div>
+                                        <h1 class="text-[#FAFAFA] text-[16px] md:text-[48px] font-semibold mb-4">
+                                            Up to 10% off Voucher
+                                        </h1>
+                                        <div class="flex gap-2 mb-5">
+                                            <a href="#"
+                                                class="text-[#FAFAFA] text-13px md:text-base font-medium inline-block underline">Shop
+                                                Now</a>
+                                            <img src="images/Vector.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end w-[80%] md:w-full">
+                                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-black">
+                                <div class="flex justify-between items-center p-[10px] md:p-[30px]">
+                                    <div>
+                                        <div class="flex gap-3 items-center mb-3">
+                                            <img src="images/1200px-Apple_gray_logo 1.svg" alt=""
+                                                class="w-[20px] md:w-[9%]" />
+                                            <h4 class="text-[#FAFAFA] md:text-base text-[13px]">
+                                                iPhone 14 Series
+                                            </h4>
+                                        </div>
+                                        <h1 class="text-[#FAFAFA] text-[16px] md:text-[48px] font-semibold mb-4">
+                                            Up to 10% off Voucher
+                                        </h1>
+                                        <div class="flex gap-2 mb-5">
+                                            <a href="#"
+                                                class="text-[#FAFAFA] text-13px md:text-base font-medium inline-block underline">Shop
+                                                Now</a>
+                                            <img src="images/Vector.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end w-[80%] md:w-full">
+                                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-black">
+                                <div class="flex justify-between items-center p-[10px] md:p-[30px]">
+                                    <div>
+                                        <div class="flex gap-3 items-center mb-3">
+                                            <img src="images/1200px-Apple_gray_logo 1.svg" alt=""
+                                                class="w-[20px] md:w-[9%]" />
+                                            <h4 class="text-[#FAFAFA] md:text-base text-[13px]">
+                                                iPhone 14 Series
+                                            </h4>
+                                        </div>
+                                        <h1 class="text-[#FAFAFA] text-[16px] md:text-[48px] font-semibold mb-4">
+                                            Up to 10% off Voucher
+                                        </h1>
+                                        <div class="flex gap-2 mb-5">
+                                            <a href="#"
+                                                class="text-[#FAFAFA] text-13px md:text-base font-medium inline-block underline">Shop
+                                                Now</a>
+                                            <img src="images/Vector.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end w-[80%] md:w-full">
+                                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-black">
+                                <div class="flex justify-between items-center p-[10px] md:p-[30px]">
+                                    <div>
+                                        <div class="flex gap-3 items-center mb-3">
+                                            <img src="images/1200px-Apple_gray_logo 1.svg" alt=""
+                                                class="w-[20px] md:w-[9%]" />
+                                            <h4 class="text-[#FAFAFA] md:text-base text-[13px]">
+                                                iPhone 14 Series
+                                            </h4>
+                                        </div>
+                                        <h1 class="text-[#FAFAFA] text-[16px] md:text-[48px] font-semibold mb-4">
+                                            Up to 10% off Voucher
+                                        </h1>
+                                        <div class="flex gap-2 mb-5">
+                                            <a href="#"
+                                                class="text-[#FAFAFA] text-13px md:text-base font-medium inline-block underline">Shop
+                                                Now</a>
+                                            <img src="images/Vector.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end w-[80%] md:w-full">
+                                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="sec-2    py-[70px]"> 
+        <div class="main-container">
+            <div class="flex gap-3 items-center mb-3">
+                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
+                <h4 class="text-[#DB4444] text-base">Today’s</h4>
+            </div>
+            <div class="flex flex-wrap items-center gap-10 mb-[40px]">
+                <h2 class="text-black text-[36px] font-semibold">Flash Sales</h2>
+                <div id="countdown">
+                    <ul>
+                        <li>
+                            <div class="label">Days</div>
+                            <span id="days">00</span>
+                        </li>
+                        <li class="separator">:</li>
+                        <li>
+                            <div class="label">Hours</div>
+                            <span id="hours">00</span>
+                        </li>
+                        <li class="separator">:</li>
+                        <li>
+                            <div class="label">Minutes</div>
+                            <span id="minutes">00</span>
+                        </li>
+                        <li class="separator">:</li>
+                        <li>
+                            <div class="label">Seconds</div>
+                            <span id="seconds">00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-[60px]">
+                <div class="swiper mySwiper-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="relative add-cart duration-500 transition">
+                                    <img src="images/Frame 570 (1).svg" alt="" class="w-full mb-2" />
+                                    <a href="#"
+                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                        To Cart</a>
+                                </div>
+                                <div>
+                                    <h3 class="text-base text-black font-normal mb-1">
+                                        HAVIT HV-G92 Gamepad
+                                    </h3>
+                                    <h5>
+                                        <span class="text-[#DB4444]">$120</span><span
+                                            class="text-[#000000] ms-2 line-through">$160</span>
+                                    </h5>
+                                    <img src="images/Five star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="relative add-cart duration-500 transition">
+                                    <img src="images/Frame 570.svg" alt="" class="w-full mb-2" />
+                                    <a href="#"
+                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                        To Cart</a>
+                                </div>
+                                <div>
+                                    <h3 class="text-base text-black font-normal mb-1">
+                                        HAVIT HV-G92 Gamepad
+                                    </h3>
+                                    <h5>
+                                        <span class="text-[#DB4444]">$120</span><span
+                                            class="text-[#000000] ms-2 line-through">$160</span>
+                                    </h5>
+                                    <img src="images/Five star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="relative add-cart duration-500 transition">
+                                    <img src="images/Frame 570 (2).svg" alt="" class="w-full mb-2" />
+                                    <a href="#"
+                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                        To Cart</a>
+                                </div>
+                                <div>
+                                    <h3 class="text-base text-black font-normal mb-1">
+                                        S-Series Comfort Chair
+                                    </h3>
+                                    <h5>
+                                        <span class="text-[#DB4444]">$120</span><span
+                                            class="text-[#000000] ms-2 line-through">$160</span>
+                                    </h5>
+                                    <img src="images/Five star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="relative add-cart duration-500 transition">
+                                    <img src="images/Frame 570 (1).svg" alt="" class="w-full mb-2" />
+                                    <a href="#"
+                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                        To Cart</a>
+                                </div>
+                                <div>
+                                    <h3 class="text-base text-black font-normal mb-1">
+                                        HAVIT HV-G92 Gamepad
+                                    </h3>
+                                    <h5>
+                                        <span class="text-[#DB4444]">$120</span><span
+                                            class="text-[#000000] ms-2 line-through">$160</span>
+                                    </h5>
+                                    <img src="images/Five star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="relative add-cart duration-500 transition">
+                                    <img src="images/Frame 570 (1).svg" alt="" class="w-full mb-2" />
+                                    <a href="#"
+                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                        To Cart</a>
+                                </div>
+                                <div>
+                                    <h3 class="text-base text-black font-normal mb-1">
+                                        HAVIT HV-G92 Gamepad
+                                    </h3>
+                                    <h5>
+                                        <span class="text-[#DB4444]">$120</span><span
+                                            class="text-[#000000] ms-2 line-through">$160</span>
+                                    </h5>
+                                    <img src="images/Five star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="relative add-cart duration-500 transition">
+                                    <img src="images/Frame 570.svg" alt="" class="w-full mb-2" />
+                                    <a href="#"
+                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                        To Cart</a>
+                                </div>
+                                <div>
+                                    <h3 class="text-base text-black font-normal mb-1">
+                                        HAVIT HV-G92 Gamepad
+                                    </h3>
+                                    <h5>
+                                        <span class="text-[#DB4444]">$120</span><span
+                                            class="text-[#000000] ms-2 line-through">$160</span>
+                                    </h5>
+                                    <img src="images/Five star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="relative add-cart duration-500 transition">
+                                    <img src="images/Frame 570 (2).svg" alt="" class="w-full mb-2" />
+                                    <a href="#"
+                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                        To Cart</a>
+                                </div>
+                                <div>
+                                    <h3 class="text-base text-black font-normal mb-1">
+                                        S-Series Comfort Chair
+                                    </h3>
+                                    <h5>
+                                        <span class="text-[#DB4444]">$120</span><span
+                                            class="text-[#000000] ms-2 line-through">$160</span>
+                                    </h5>
+                                    <img src="images/Five star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="relative add-cart duration-500 transition">
+                                    <img src="images/Frame 570 (1).svg" alt="" class="w-full mb-2" />
+                                    <a href="#"
+                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                        To Cart</a>
+                                </div>
+                                <div>
+                                    <h3 class="text-base text-black font-normal mb-1">
+                                        HAVIT HV-G92 Gamepad
+                                    </h3>
+                                    <h5>
+                                        <span class="text-[#DB4444]">$120</span><span
+                                            class="text-[#000000] ms-2 line-through">$160</span>
+                                    </h5>
+                                    <img src="images/Five star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev btn"></div>
+                    <div class="swiper-button-next btn"></div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#"
+                    class="bg-[#DB4444] text-white text-base font-normal inline-block px-[30px] py-[12px] rounded">View
+                    All Products</a>
+            </div>
+        </div>
+   </section> 
+
+    <section class="sec-3  py-[60px] border-t-[0.5px] border-[#00000038]"> 
+        <div class="main-container">
+            <div class="flex gap-3 items-center mb-3">
+                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
+                <h4 class="text-[#DB4444] text-base">Categories</h4>
+            </div>
+            <h2 class="text-black text-[36px] font-semibold">Browse By Category</h2>
+
+            <div class="mt-[40px]">
+                <div class="swiper mySwiper-3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"
+                                        class="text-[55px] group-hover:text-white">
+                                        <path fill="currentColor"
+                                            d="M10.25 2A3.25 3.25 0 0 0 7 5.25v21.5A3.25 3.25 0 0 0 10.25 30h11.5A3.25 3.25 0 0 0 25 26.75V5.25A3.25 3.25 0 0 0 21.75 2zM9 5.25C9 4.56 9.56 4 10.25 4h11.5c.69 0 1.25.56 1.25 1.25v21.5c0 .69-.56 1.25-1.25 1.25h-11.5C9.56 28 9 27.44 9 26.75zM14 24a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">Phones</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        class="text-[55px] group-hover:text-white">
+                                        <path fill="currentColor"
+                                            d="M20 2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6v2H7v2h10v-2h-3v-2h6a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m0 14H4V4h16z" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">Computers</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"
+                                        class="text-[55px] group-hover:text-white">
+                                        <path fill="currentColor"
+                                            d="M6 5.268V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1.268A2 2 0 0 1 15 7v1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v2a2 2 0 0 1-1 1.732V16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1.268A2 2 0 0 1 5 13V7a2 2 0 0 1 1-1.732M8 3a1 1 0 0 0-1 1v1h6V4a1 1 0 0 0-1-1zm6 10V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v6a1 1 0 0 0 .999 1H13a1 1 0 0 0 1-1m-7 3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H7z" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">SmartWatch</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 256 256" class="text-[55px] group-hover:text-white">
+                                        <path fill="currentColor"
+                                            d="M208 60h-29.87l-14.81-22.22A4 4 0 0 0 160 36H96a4 4 0 0 0-3.32 1.78L77.85 60H48a20 20 0 0 0-20 20v112a20 20 0 0 0 20 20h160a20 20 0 0 0 20-20V80a20 20 0 0 0-20-20m12 132a12 12 0 0 1-12 12H48a12 12 0 0 1-12-12V80a12 12 0 0 1 12-12h32a4 4 0 0 0 3.33-1.78L98.13 44h59.72l14.82 22.22A4 4 0 0 0 176 68h32a12 12 0 0 1 12 12ZM128 92a40 40 0 1 0 40 40a40 40 0 0 0-40-40m0 72a32 32 0 1 1 32-32a32 32 0 0 1-32 32" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">Camera</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        class="text-[55px] group-hover:text-white">
+                                        <g fill="none">
+                                            <path stroke="currentColor" stroke-linecap="round"
+                                                d="M21 15v-3a9 9 0 1 0-18 0v3" />
+                                            <path fill="currentColor"
+                                                d="M3 15v-.5h-.5v.5zm0 .5h3v-1H3zm3.5.5v3h1v-3zm-3 3v-4h-1v4zM5 20.5A1.5 1.5 0 0 1 3.5 19h-1A2.5 2.5 0 0 0 5 21.5zM6.5 19A1.5 1.5 0 0 1 5 20.5v1A2.5 2.5 0 0 0 7.5 19zM6 15.5a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 6 14.5zm15-.5h.5v-.5H21zm-3 .5h3v-1h-3zm2.5-.5v4h1v-4zm-3 4v-3h-1v3zm1.5 1.5a1.5 1.5 0 0 1-1.5-1.5h-1a2.5 2.5 0 0 0 2.5 2.5zm1.5-1.5a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5zM18 14.5a1.5 1.5 0 0 0-1.5 1.5h1a.5.5 0 0 1 .5-.5z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">HeadPhones</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14"
+                                        class="text-[55px] group-hover:text-white">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M4.579 6.126v2.786M3.186 7.519h2.786M.5 7a4.643 4.643 0 0 0 4.643 4.643h4.643a3.714 3.714 0 1 0-.856-7.33A4.643 4.643 0 0 0 .5 7" />
+                                            <path
+                                                d="M9.131 7.853a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m2.139.25a.125.125 0 1 1 0-.25m0 .25a.125.125 0 0 0 0-.25m-1.045-.797a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m0 2.388a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">Gaming</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"
+                                        class="text-[55px] group-hover:text-white">
+                                        <path fill="currentColor"
+                                            d="M10.25 2A3.25 3.25 0 0 0 7 5.25v21.5A3.25 3.25 0 0 0 10.25 30h11.5A3.25 3.25 0 0 0 25 26.75V5.25A3.25 3.25 0 0 0 21.75 2zM9 5.25C9 4.56 9.56 4 10.25 4h11.5c.69 0 1.25.56 1.25 1.25v21.5c0 .69-.56 1.25-1.25 1.25h-11.5C9.56 28 9 27.44 9 26.75zM14 24a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">Phones</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        class="text-[55px] group-hover:text-white">
+                                        <path fill="currentColor"
+                                            d="M20 2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6v2H7v2h10v-2h-3v-2h6a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m0 14H4V4h16z" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">Computers</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"
+                                        class="text-[55px] group-hover:text-white">
+                                        <path fill="currentColor"
+                                            d="M6 5.268V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1.268A2 2 0 0 1 15 7v1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v2a2 2 0 0 1-1 1.732V16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1.268A2 2 0 0 1 5 13V7a2 2 0 0 1 1-1.732M8 3a1 1 0 0 0-1 1v1h6V4a1 1 0 0 0-1-1zm6 10V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v6a1 1 0 0 0 .999 1H13a1 1 0 0 0 1-1m-7 3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H7z" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">SmartWatch</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 256 256" class="text-[55px] group-hover:text-white">
+                                        <path fill="currentColor"
+                                            d="M208 60h-29.87l-14.81-22.22A4 4 0 0 0 160 36H96a4 4 0 0 0-3.32 1.78L77.85 60H48a20 20 0 0 0-20 20v112a20 20 0 0 0 20 20h160a20 20 0 0 0 20-20V80a20 20 0 0 0-20-20m12 132a12 12 0 0 1-12 12H48a12 12 0 0 1-12-12V80a12 12 0 0 1 12-12h32a4 4 0 0 0 3.33-1.78L98.13 44h59.72l14.82 22.22A4 4 0 0 0 176 68h32a12 12 0 0 1 12 12ZM128 92a40 40 0 1 0 40 40a40 40 0 0 0-40-40m0 72a32 32 0 1 1 32-32a32 32 0 0 1-32 32" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">Camera</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        class="text-[55px] group-hover:text-white">
+                                        <g fill="none">
+                                            <path stroke="currentColor" stroke-linecap="round"
+                                                d="M21 15v-3a9 9 0 1 0-18 0v3" />
+                                            <path fill="currentColor"
+                                                d="M3 15v-.5h-.5v.5zm0 .5h3v-1H3zm3.5.5v3h1v-3zm-3 3v-4h-1v4zM5 20.5A1.5 1.5 0 0 1 3.5 19h-1A2.5 2.5 0 0 0 5 21.5zM6.5 19A1.5 1.5 0 0 1 5 20.5v1A2.5 2.5 0 0 0 7.5 19zM6 15.5a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 6 14.5zm15-.5h.5v-.5H21zm-3 .5h3v-1h-3zm2.5-.5v4h1v-4zm-3 4v-3h-1v3zm1.5 1.5a1.5 1.5 0 0 1-1.5-1.5h-1a2.5 2.5 0 0 0 2.5 2.5zm1.5-1.5a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5zM18 14.5a1.5 1.5 0 0 0-1.5 1.5h1a.5.5 0 0 1 .5-.5z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">HeadPhones</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
+                                <div class="flex justify-center mb-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14"
+                                        class="text-[55px] group-hover:text-white">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M4.579 6.126v2.786M3.186 7.519h2.786M.5 7a4.643 4.643 0 0 0 4.643 4.643h4.643a3.714 3.714 0 1 0-.856-7.33A4.643 4.643 0 0 0 .5 7" />
+                                            <path
+                                                d="M9.131 7.853a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m2.139.25a.125.125 0 1 1 0-.25m0 .25a.125.125 0 0 0 0-.25m-1.045-.797a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m0 2.388a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h2 class="text-black text-base font-normal group-hover:text-white">Gaming</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev btn"></div>
+                    <div class="swiper-button-next btn"></div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+     <section class="sec-4  py-[60px] border-t-[0.5px] border-[#00000038]"> 
+        <div class="main-container">
+            <div class="flex gap-3 items-center mb-3">
+                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
+                <h4 class="text-[#DB4444] text-base">This Month</h4>
+            </div>
+            <div class="flex justify-between items-center mb-[30px]">
+                <h2 class="text-black text-[36px] font-semibold">Best Selling Products</h2>
+                <a href="#" class="text-white bg-[#DB4444] text-base rounded py-3 px-8 inline-block">View All</a>
+            </div>
+
+            <div class="flex flex-wrap mx-[-15px]">
+                <div class="lg:w-3/12  w-6/12 px-3.5 mb-3 lg:mb-0">
+                    <div>
+                        <img src="images/Cart.svg" alt="" class="mb-2">
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                The north coat
+                            </h3>
+                            <h5>
+                                <span class="text-[#DB4444]">$260</span><span
+                                    class="text-[#000000] ms-2 line-through">$360</span>
+                            </h5>
+                            <img src="images/Five star.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12  w-6/12 px-3.5 mb-3 lg:mb-0">
+                    <div>
+                        <img src="images/Cart (1).svg" alt="" class="mb-2">
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                Gucci duffle bag
+                            </h3>
+                            <h5>
+                                <span class="text-[#DB4444]">$960</span><span
+                                    class="text-[#000000] ms-2 line-through">$1160</span>
+                            </h5>
+                            <img src="images/Five star.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12  w-6/12 px-3.5 mb-3 lg:mb-0">
+                    <div>
+                        <img src="images/Cart (2).svg" alt="" class="mb-2">
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                RGB liquid CPU Cooler
+                            </h3>
+                            <h5>
+                                <span class="text-[#DB4444]">$160</span><span
+                                    class="text-[#000000] ms-2 line-through">$170</span>
+                            </h5>
+                            <img src="images/Five star.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12  w-6/12 px-3.5 mb-3 lg:mb-0">
+                    <div>
+                        <img src="images/Cart (3).svg" alt="" class="mb-2">
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                Small BookSelf
+                            </h3>
+                            <h5>
+                                <span class="text-[#DB4444]">$360</span>
+                            </h5>
+                            <img src="images/Five star.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> 
+
+     <section class="sec-5  py-[60px] sound">
+        <div class="main-container">
+            <div class="flex flex-wrap mx-[-15px] items-center justify-between">
+                <div class="lg:w-5/12 md:w-6/12 w-full px-3.5">
+                    <div>
+                        <h4 class="text-[#00FF66] text-base font-semibold mb-5">Categories</h4>
+                        <h2 class="text-[#FAFAFA] text-[36px] lg:text-[48px] font-semibold tracking-wider mb-5">Enhance
+                            Your Music Experience</h2>
+                        <div class="flex items-center gap-2 mb-8">
+                            <div class="w-[70px] h-[70px] bg-white text-center rounded-full">
+                                <h6 class="text-black mt-3  text-base font-semibold">23</h6>
+                                <p class="text-black  text-[13px] font-semibold">Hours</p>
+                            </div>
+                            <div class="w-[70px] h-[70px] bg-white text-center rounded-full">
+                                <h6 class="text-black mt-3 text-base font-semibold">05</h6>
+                                <p class="text-black  text-[13px] font-semibold">Days</p>
+                            </div>
+                            <div class="w-[70px] h-[70px] bg-white text-center rounded-full">
+                                <h6 class="text-black mt-3 text-base font-semibold">58</h6>
+                                <p class="text-black text-[13px] font-semibold">Minutes</p>
+                            </div>
+                            <div class="w-[70px] h-[70px] bg-white text-center rounded-full">
+                                <h6 class="text-black mt-3  text-base font-semibold">23</h6>
+                                <p class="text-black text-[13px] font-semibold">Seconds</p>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="text-white bg-[#00FF66] text-center py-[12px] px-[40px] inline-block rounded">Buy
+                            Now!</a>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 md:w-6/12 w-full px-3.5">
+                    <div>
+                        <img src="images/Frame 694.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <section class=" sec-6 py-[60px]"> 
+        <div class="main-container">
+            <div class="flex gap-3 items-center mb-3">
+                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
+                <h4 class="text-[#DB4444] text-base">Our Products</h4>
+            </div>
+            <h2 class="text-black text-[36px] font-semibold mb-5">Explore Our Products</h2>
+            <div class="flex flex-wrap mx-[-15px] items-center">
+                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
+                    <div>
+                        <div class="relative add-cart duration-500 transition">
+                            <img src="images/dog.svg" alt="" class="w-full mb-2" />
+                            <a href="#"
+                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                To Cart</a>
+                        </div>
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                Breed Dry Dog Food
+                            </h3>
+                            <h5 class="flex items-center gap-1">
+                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
+                    <div>
+                        <div class="relative add-cart duration-500 transition">
+                            <img src="images/laptop.svg" alt="" class="w-full mb-2" />
+                            <a href="#"
+                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                To Cart</a>
+                        </div>
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                CANON EOS DSLR Camera
+                            </h3>
+                            <h5 class="flex items-center gap-1">
+                                <span class="text-[#DB4444]">$620</span> <img src="images/Five star.svg" alt="" />
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
+                    <div>
+                        <div class="relative add-cart duration-500 transition">
+                            <img src="images/laptop.svg" alt="" class="w-full mb-2" />
+                            <a href="#"
+                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                To Cart</a>
+                        </div>
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                ASUS FHD Gaming Laptop
+                            </h3>
+                            <h5 class="flex items-center gap-1">
+                                <span class="text-[#DB4444]">$620</span> <img src="images/Five star.svg" alt="" />
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
+                    <div>
+                        <div class="relative add-cart duration-500 transition">
+                            <img src="images/makeup.svg" alt="" class="w-full mb-2" />
+                            <a href="#"
+                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                To Cart</a>
+                        </div>
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                Curology Product Set
+                            </h3>
+                            <h5 class="flex items-center gap-1">
+                                <span class="text-[#DB4444]">$500</span> <img src="images/Five star.svg" alt="" />
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
+                    <div>
+                        <div class="relative add-cart duration-500 transition">
+                            <img src="images/car.svg" alt="" class="w-full mb-2" />
+                            <a href="#"
+                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                To Cart</a>
+                        </div>
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                Kids Electric Car
+                            </h3>
+                            <h5 class="flex items-center gap-1">
+                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
+                            </h5>
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="inline-block rounded-full w-[23px] h-[23px] text-center border-[2px] border-black">
+                                    <span class="bg-[red] inline-block rounded-full p-[8px]"></span>
+                                </div>
+                                <span class="bg-[#DB4444] inline-block rounded-full w-[20px] h-[20px] "></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
+                    <div>
+                        <div class="relative add-cart duration-500 transition">
+                            <img src="images/shoes.svg" alt="" class="w-full mb-2" />
+                            <a href="#"
+                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                To Cart</a>
+                        </div>
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                Jr. Zoom Soccer Cleats
+                            </h3>
+                            <h5 class="flex items-center gap-1">
+                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
+                            </h5>
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="inline-block rounded-full w-[23px] h-[23px] text-center border-[2px] border-black">
+                                    <span class="bg-[#EEFF61] inline-block rounded-full p-[8px]"></span>
+                                </div>
+                                <span class="bg-[#DB4444] inline-block rounded-full w-[20px] h-[20px] "></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
+                    <div>
+                        <div class="relative add-cart duration-500 transition">
+                            <img src="images/Cart (4).svg" alt="" class="w-full mb-2" />
+                            <a href="#"
+                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                To Cart</a>
+                        </div>
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                GP11 Shooter USB Gamepad
+                            </h3>
+                            <h5 class="flex items-center gap-1">
+                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
+                            </h5>
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="inline-block rounded-full w-[23px] h-[23px] text-center border-[2px] border-black">
+                                    <span class="bg-black inline-block rounded-full p-[8px]"></span>
+                                </div>
+                                <span class="bg-[#DB4444] inline-block rounded-full w-[20px] h-[20px] "></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12   w-6/12 px-3.5">
+                    <div>
+                        <div class="relative add-cart duration-500 transition">
+                            <img src="images/Cart (5).svg" alt="" class="w-full mb-2" />
+                            <a href="#"
+                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
+                                To Cart</a>
+                        </div>
+                        <div>
+                            <h3 class="text-base text-black font-normal mb-1">
+                                Quilted Satin Jacket
+                            </h3>
+                            <h5 class="flex items-center gap-1">
+                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
+                            </h5>
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="inline-block rounded-full w-[23px] h-[23px] text-center border-[2px] border-black">
+                                    <span class="bg-[green] inline-block rounded-full p-[8px]"></span>
+                                </div>
+                                <span class="bg-[#DB4444] inline-block rounded-full w-[20px] h-[20px] "></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="text-white bg-[#DB4444] py-3 px-8 inline-block rounded">View All Products</a>
+            </div>
+        </div>
+    </section> 
+
+     <section class="sec-7 py-[60px]"> 
+        <div class="main-container">
+            <div class="flex gap-3 items-center mb-3">
+                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
+                <h4 class="text-[#DB4444] text-base">Featured</h4>
+            </div>
+            <h2 class="text-black text-[36px] font-semibold mb-5">New Arrival</h2>
+
+            <div class="flex flex-wrap mx-[-15px] items-center">
+                <div class="lg:w-6/12  w-full px-3.5">
+                    <div class="bg-black pt-[60px] px-[30px] relative mb-5 lg:mb-0">
+                        <img src="images/ps5-slim-goedkope-playstation_large 1.svg" alt="">
+                        <div class="absolute bottom-[35px] left-[60px]">
+                            <h3 class="text-white text-[24px] font-semibold tracking-wider mb-4">PlayStation 5</h3>
+                            <p class="text-[#FAFAFA] text-[14px] font-normal w-[63%] mb-3">Black and White version of
+                                the PS5 coming out on sale.</p>
+                            <a href="#" class="inline-block text-[#FAFAFA] underline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-6/12  w-full px-3.5">
+                    <div class="bg-black relative mb-5">
+                        <div class="flex justify-end">
+                            <img src="images/attractive-woman-wearing-hat-posing-black-background 1.svg" alt="">
+                        </div>
+                        <div class="absolute bottom-[35px] left-[35px]">
+                            <h3 class="text-white text-[24px] font-semibold tracking-wider mb-4">Women’s Collections
+                            </h3>
+                            <p class="text-[#FAFAFA] text-[14px] font-normal w-[63%] mb-3">Featured woman collections
+                                that give you another vibe.</p>
+                            <a href="#" class="inline-block text-[#FAFAFA] underline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="flex mx-[-15px] items-center">
+                        <div class="w-6/12 px-3.5">
+                            <div class="bg-black p-[23px] relative">
+                                <img src="images/Frame 707.svg" alt="">
+                                <div class="absolute bottom-[15px] left-[35px]">
+                                    <h3 class="text-white text-[24px] font-semibold tracking-wider mb-1">Speakers</h3>
+                                    <p class="text-[#FAFAFA] text-[14px] font-normal  mb-1">Amazon wireless speakers</p>
+                                    <a href="#" class="inline-block text-[#FAFAFA] underline">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-6/12 px-3.5">
+                            <div class="bg-[#000000d9] p-[23px] relative">
+                                <img src="images/Frame 706.svg" alt="">
+                                <div class="absolute bottom-[15px] left-[35px]">
+                                    <h3 class="text-white text-[24px] font-semibold tracking-wider mb-1">Perfume</h3>
+                                    <p class="text-[#FAFAFA] text-[14px] font-normal  mb-1">GUCCI INTENSE OUD EDP</p>
+                                    <a href="#" class="inline-block text-[#FAFAFA] underline">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+     </section> 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper-2", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper-3", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+    <script>
+        var menu = document.getElementById("menu-bar");
+        function toggleMenu() {
+            if (menu.classList.contains("show")) {
+                menu.classList.remove("show");
+            } else {
+                menu.classList.add("show");
+            }
+        }
+    </script>
+    <script>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "09/30/",
+                birthday = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = String(
+                        Math.floor(distance / day)
+                    ).padStart(2, "0");
+                    document.getElementById("hours").innerText = String(
+                        Math.floor((distance % day) / hour)
+                    ).padStart(2, "0");
+                    document.getElementById("minutes").innerText = String(
+                        Math.floor((distance % hour) / minute)
+                    ).padStart(2, "0");
+                    document.getElementById("seconds").innerText = String(
+                        Math.floor((distance % minute) / second)
+                    ).padStart(2, "0");
+                }, 1000);
+        })();
+    </script>
+</body>
+
+</html>
