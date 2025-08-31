@@ -9,1101 +9,1091 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>LOXCY</title>
+
     <style>
         .menu-bar {
             display: none;
         }
-
+    
         .show {
             display: block;
         }
-
-        .dot span {
-            background: red;
-            border: 1px solid white;
+    
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 10px 10px -8px #0b363d;
+        }
+        .btn-2:hover{
+        background-color: #0b363d;
+        color: white;
+      }
+          .hii{
+            z-index: 99;
+          }
+        .btn {
+            transition: all 0.5s;
+        }
+    
+        .text-line::after {
+            content: "";
+            background: rgba(255, 137, 69, 0.2);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 36%;
+            width: 100%;
+            z-index: -1;
+        }
+    
+        .text-line {
+            position: relative;
+            z-index: 2;
+            padding: 0 10px;
+        }
+    
+        .email>input::placeholder {
+            color: white;
+        }
+    
+        .sec .roted {
+            animation: rotate-center 30s linear infinite both;
+        }
+    
+        @keyframes rotate-center {
+            0% {
+                transform: rotate(0deg);
+            }
+    
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    
+        .sec .third {
+            animation: up-down-img 1.7s ease-in-out infinite alternate both;
+        }
+    
+        @keyframes up-down-img {
+            0% {
+                transform: translateY(0);
+            }
+    
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+    
+        header {
+            background-color: #0b363d;
+            box-shadow: 10px -10px 20px 0px;
         }
 
-        #countdown {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
+         .active-link {
+        background-color: #0b363d;
+        box-shadow: 10px -10px 20px 0px;
+        z-index: 90;
+      }
+    
+        .about-style-two {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+                rgba(0, 0, 0, 0.06) 0px 2px 4px;
         }
 
-        #countdown ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0 10px;
-        }
-
-        #countdown li {
-            display: inline-block;
-            text-align: center;
-        }
-
-        #countdown span {
-            display: block;
-            font-size: 25px;
+        .behind-text{
+        position: relative;
+      }
+      .faq-background-text {
+            position: absolute;
+            top: 29%;
+            left: 16%;
+            z-index: -1;
+            font-size: 300px;
+            color: #f5f5f5;
             font-weight: bold;
         }
-
-        .label {
-            font-size: 17px;
+        .icon-4{
+            width:30px;
+             height:32px;
+           color: orangered;
+       
         }
-
-        .separator {
-            font-size: 30px;
-            color: #e57373;
-            line-height: 48px;
-        }
-
-        .add-cart:hover a {
-            z-index: 1;
-            visibility: visible;
-            opacity: 1;
-        }
-
-        .sound {
-            background-image: linear-gradient(271deg, #000000bf, #020202)
-        }
+    
     </style>
 </head>
 
 <body>
-    <header class="border-b-[0.5px] border-[#00000038] bg-white" id="header">
+    <header class="sticky top-0  hii " id="header">
         <div class="main-container">
             <nav>
-                <div class="lg:flex items-center">
-                    <div class="py-4 flex items-center justify-between">
-                        <a href="#" class="text-black font-bold text-[24px]">Exclusive</a>
+                <div class="md:flex items-center">
+                    <div class="py-8 flex items-center justify-between">
+                        <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                height="1em" viewBox="0 0 24 24" class="text-3xl text-[#FF8845]">
+                                <path fill="currentColor"
+                                    d="m12 16l3 6H9zm-2.627.255a5 5 0 1 1 5.255 0l-1.356-2.711a2 2 0 1 0-2.544 0zm-2.241 4.482A10 10 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a10 10 0 0 1-5.131 8.737l-1.344-2.688a7 7 0 1 0-7.05 0z" />
+                            </svg>
+                            <span class="text-3xl text-white">LOXCY</span></a>
                         <a href="javascript:void(0)" onclick="toggleMenu()">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-8 text-black lg:hidden">
+                                stroke="currentColor" class="w-8 text-white md:hidden">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
                             </svg>
                         </a>
                     </div>
-                    <div id="menu-bar" class="lg:flex items-center menu-bar  w-full">
-                        <ul class="lg:flex gap-10 mx-auto">
+                    <div id="menu-bar" class="md:flex items-center menu-bar ml-10 w-full">
+                        <ul class="md:flex gap-10 mx-auto">
                             <li>
                                 <a href="#"
-                                    class="text-black text-base font-normal py-4 inline-block underline">Home</a>
+                                    class="text-white text-base font-normal py-4 inline-block hover:text-[#FF8845]">Home</a>
                             </li>
                             <li>
-                                <a href="#" class="text-black text-base font-normal py-4 inline-block">Contact</a>
+                                <a href="#About"
+                                    class="text-white text-base font-normal py-4 inline-block hover:text-[#FF8845]">About
+                                    us</a>
                             </li>
                             <li>
-                                <a href="#" class="text-black text-base font-normal py-4 inline-block">About</a>
+                                <a href="#"
+                                    class="text-white text-base font-normal py-4 inline-block hover:text-[#FF8845]">Services</a>
                             </li>
                             <li>
-                                <a href="#" class="text-black text-base font-normal py-4 inline-block">Sign Up</a>
+                                <a href="#"
+                                    class="text-white text-base font-normal py-4 inline-block hover:text-[#FF8845]">Price</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-white text-base font-normal py-4 inline-block hover:text-[#FF8845]">Contact</a>
                             </li>
                         </ul>
-                        <div class="flex gap-2 mb-[14px] lg:mb-0">
-                            <div class="relative">
-                                <input type="search" placeholder="What are you looking for?"
-                                    class="bg-[#F5F5F5] rounded text-[12px] py-2 px-4 w-[203px]" />
-                                <img src="images/Component 2.svg" alt="" class="absolute top-[5px] right-[4px]" />
-                            </div>
-                            <a href="#"><img src="images/Wishlist.svg" alt="" /></a>
-                            <a href="#"><img src="images/Cart1 with buy.svg" alt="" /></a>
-                        </div>
+                        <a href="#"
+                            class="btn bg-[#FF8845] inline-block py-2 px-5 rounded text-white text-[15px] mb-3 md:mb-0">Login</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-
-    <section class="sec-1 py-[50px]">
+    
+    <section class="pt-[70px] bg-[#0b363d]">
         <div class="main-container">
-            <div class="flex flex-wrap mx-[-15px] justify-between">
-                <div class="lg:w-3/12 w-full px-5">
-                    <div class="">
-                        <ul>
-                            <li class="mb-2 flex items-center justify-between">
-                                <a href="#" class="text-base text-black font-normal inline-block">Woman’s
-                                    Fashion</a><img src="images/DropDown.svg" alt="" />
-                            </li>
-                            <li class="mb-2 flex items-center justify-between">
-                                <a href="#" class="text-base text-black font-normal inline-block">Men’s Fashion</a><img
-                                    src="images/DropDown.svg" alt="" />
-                            </li>
-                            <li>
-                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Electronics</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Home &
-                                    Lifestyle</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Medicine</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Sports &
-                                    Outdoor</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Groceries &
-                                    Pets</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-base text-black font-normal mb-2 inline-block">Health &
-                                    Beauty</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="lg:w-9/12 w-full px-3.5">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide bg-black">
-                                <div class="flex justify-between items-center p-[10px] md:p-[30px]">
-                                    <div>
-                                        <div class="flex gap-3 items-center mb-3">
-                                            <img src="images/1200px-Apple_gray_logo 1.svg" alt=""
-                                                class="w-[20px] md:w-[9%]" />
-                                            <h4 class="text-[#FAFAFA] md:text-base text-[13px]">
-                                                iPhone 14 Series
-                                            </h4>
-                                        </div>
-                                        <h1 class="text-[#FAFAFA] text-[16px] md:text-[48px] font-semibold mb-4">
-                                            Up to 10% off Voucher
-                                        </h1>
-                                        <div class="flex gap-2 mb-5">
-                                            <a href="#"
-                                                class="text-[#FAFAFA] text-13px md:text-base font-medium inline-block underline">Shop
-                                                Now</a>
-                                            <img src="images/Vector.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-end w-[80%] md:w-full">
-                                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.svg" alt="" />
-                                    </div>
+            <div class="flex flex-wrap mx-[-15px] items-center justify-between">
+                <div class="lg:w-5/12 w-full px-3.5">
+                    <div class="mb-5 lg:mb-0">
+                        <h4 class="mb-3 text-white text-[17px] font-semibold tracking-wide">
+                            <span class="text-[#FF8845] me-2">100%</span>Satisfaction
+                            Guarantee
+                        </h4>
+                        <h3 class="mb-2 text-white font-semibold text-[37px]">
+                            Managing Business
+                            <span class="text-[#FF8845] relative px-[10px] text-line z-10">Payments</span>
+                            Has Never Been Easier
+                        </h3>
+                        <p class="text-[#ffffff80] mb-4">
+                            End-to-end payments and financial management in a single
+                            solution Meet the right platform to help.
+                        </p>
+                        <div class="relative email mb-5">
+                            <input type="text" placeholder="Enter email"
+                                class="w-full py-4 px-4 bg-[#81d86f1a] text-white border-black outline-0 rounded-md" />
+                            <a href="#"
+                                class="bg-[#FF8845] inline-block text-white py-3 px-8 rounded absolute right-[14px] bottom-[8px]"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M3.5 1.346a.5.5 0 0 1 .241.061l18.462 10.155a.5.5 0 0 1 0 .876L3.741 22.592A.5.5 0 0 1 3 22.154V1.846a.5.5 0 0 1 .5-.5M5 4.382V11h5v2H5v6.617L18.85 12z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap mx-[-15px] items-cente">
+                            <div class="w-2/6 px-3.5">
+                                <div class="flex items-center">
+                                    <i class="text-[#FF8845] text-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                            height="1em" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-.997-6l7.07-7.071l-1.413-1.414l-5.657 5.657l-2.829-2.829l-1.414 1.414z" />
+                                        </svg></i>
+                                    <h3 class="text-white text-[18px] ms-3">Free Register</h3>
                                 </div>
                             </div>
-                            <div class="swiper-slide bg-black">
-                                <div class="flex justify-between items-center p-[10px] md:p-[30px]">
-                                    <div>
-                                        <div class="flex gap-3 items-center mb-3">
-                                            <img src="images/1200px-Apple_gray_logo 1.svg" alt=""
-                                                class="w-[20px] md:w-[9%]" />
-                                            <h4 class="text-[#FAFAFA] md:text-base text-[13px]">
-                                                iPhone 14 Series
-                                            </h4>
-                                        </div>
-                                        <h1 class="text-[#FAFAFA] text-[16px] md:text-[48px] font-semibold mb-4">
-                                            Up to 10% off Voucher
-                                        </h1>
-                                        <div class="flex gap-2 mb-5">
-                                            <a href="#"
-                                                class="text-[#FAFAFA] text-13px md:text-base font-medium inline-block underline">Shop
-                                                Now</a>
-                                            <img src="images/Vector.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-end w-[80%] md:w-full">
-                                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.svg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide bg-black">
-                                <div class="flex justify-between items-center p-[10px] md:p-[30px]">
-                                    <div>
-                                        <div class="flex gap-3 items-center mb-3">
-                                            <img src="images/1200px-Apple_gray_logo 1.svg" alt=""
-                                                class="w-[20px] md:w-[9%]" />
-                                            <h4 class="text-[#FAFAFA] md:text-base text-[13px]">
-                                                iPhone 14 Series
-                                            </h4>
-                                        </div>
-                                        <h1 class="text-[#FAFAFA] text-[16px] md:text-[48px] font-semibold mb-4">
-                                            Up to 10% off Voucher
-                                        </h1>
-                                        <div class="flex gap-2 mb-5">
-                                            <a href="#"
-                                                class="text-[#FAFAFA] text-13px md:text-base font-medium inline-block underline">Shop
-                                                Now</a>
-                                            <img src="images/Vector.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-end w-[80%] md:w-full">
-                                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.svg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide bg-black">
-                                <div class="flex justify-between items-center p-[10px] md:p-[30px]">
-                                    <div>
-                                        <div class="flex gap-3 items-center mb-3">
-                                            <img src="images/1200px-Apple_gray_logo 1.svg" alt=""
-                                                class="w-[20px] md:w-[9%]" />
-                                            <h4 class="text-[#FAFAFA] md:text-base text-[13px]">
-                                                iPhone 14 Series
-                                            </h4>
-                                        </div>
-                                        <h1 class="text-[#FAFAFA] text-[16px] md:text-[48px] font-semibold mb-4">
-                                            Up to 10% off Voucher
-                                        </h1>
-                                        <div class="flex gap-2 mb-5">
-                                            <a href="#"
-                                                class="text-[#FAFAFA] text-13px md:text-base font-medium inline-block underline">Shop
-                                                Now</a>
-                                            <img src="images/Vector.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-end w-[80%] md:w-full">
-                                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.svg" alt="" />
-                                    </div>
+                            <div class="w-2/6 px-3.5">
+                                <div class="flex items-center">
+                                    <i class="text-[#FF8845] text-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                            height="1em" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-.997-6l7.07-7.071l-1.413-1.414l-5.657 5.657l-2.829-2.829l-1.414 1.414z" />
+                                        </svg></i>
+                                    <h3 class="text-white text-[18px] ms-3">Great Services</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination dot"></div>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-full px-3.5">
+                    <div class="z-10 relative sec overflow-hidden">
+                        <img src="images/work-girl.png" alt="" class="w-full" />
+                        <img src="images/contact_globe.svg" alt="" class="absolute w-full top-0 left-0 z-[-1] roted" />
+                        <img src="images/ils-01.2.png" alt=""
+                            class="absolute top-[40%] left-[-7%] opacity-70 third hidden lg:block" />
+                        <img src="images/ils-01.3.png" alt="" class="absolute bottom-[-9%] opacity-70 hidden lg:block" />
+                        <img src="images/ils-01.1.png" alt=""
+                            class="absolute top-[60%] left-[52%] opacity-70 hidden lg:block" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-     <section class="sec-2    py-[70px]"> 
+    <section class="sec-1 py-[70px] bg-white">
         <div class="main-container">
-            <div class="flex gap-3 items-center mb-3">
-                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
-                <h4 class="text-[#DB4444] text-base">Today’s</h4>
+            <div class="flex flex-wrap mx-[-15px] items-center">
+                <div class="lg:w-2/12 md:w-4/12 w-6/12 mb-3 lg:mb-0 px-3.5">
+                    <img src="images/amazon.svg" alt="" class="w-8/12" />
+                </div>
+                <div class="lg:w-2/12 md:w-4/12 w-6/12 mb-3 lg:mb-0 px-3.5">
+                    <img src="images/google.svg" alt="" class="w-8/12" />
+                </div>
+                <div class="lg:w-2/12 md:w-4/12 w-6/12 mb-3 lg:mb-0 px-3.5">
+                    <img src="images/lenovo.svg" alt="" class="w-8/12" />
+                </div>
+                <div class="lg:w-2/12 md:w-4/12 w-6/12 mb-3 lg:mb-0 px-3.5">
+                    <img src="images/paypal.svg" alt="" class="w-8/12" />
+                </div>
+                <div class="lg:w-2/12 md:w-4/12 w-6/12 mb-3 lg:mb-0 px-3.5">
+                    <img src="images/shopify.svg" alt="" class="w-8/12" />
+                </div>
+                <div class="lg:w-2/12 md:w-4/12 w-6/12 mb-3 lg:mb-0 px-3.5">
+                    <img src="images/spotify.svg" alt="" class="w-8/12" />
+                </div>
             </div>
-            <div class="flex flex-wrap items-center gap-10 mb-[40px]">
-                <h2 class="text-black text-[36px] font-semibold">Flash Sales</h2>
-                <div id="countdown">
+        </div>
+    </section>
+    
+    <section class="sec-2  py-[70px] bg-white">
+        <div class="main-container">
+            <div class="flex flex-wrap mx-[-15px] items-center mb-5">
+            <div class="lg:w-6/12 w-full mb-5 px-3.5">
+                <div class="">
+                    <h3 class="text-[#ff8945] font-semibold text-[17px] tracking-wider mb-2">
+                        EASY HANDLING
+                    </h3>
+                    <h2 class="text-[#0b363d] font-semibold text-[42px]">
+                        Discover Powerful Features To Boost
+                        <span class="text-[#ff8945] relative z-10 text-line">Productivity</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="lg:w-3/12 md:w-6/12 w-full mb-7 lg:mb-0 px-3.5">
+                <div class="about-style-two bg-[#fff9f5] rounded-lg px-[70px] py-[70px]">
+                    <img src="images/appoinment.png" alt="" class="mb-4 w-[60px]" />
+                    <h3 class="text-[23px] text-[#0b363d] font-semibold mb-4">
+                        Advanced online appointment
+                    </h3>
+                    <div class="flex justify-between">
+                        <h3>Appoinment</h3>
+                        <img src="images//arrow-1.png" alt="" class="w-[50px]" />
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-3/12 md:w-6/12 w-full mb-5 lg:mb-0 px-3.5">
+                <div class="about-style-two bg-[#fff9f5] rounded-lg px-[70px] py-[70px]">
+                    <img src="images/team.png" alt="" class="mb-4 w-[60px]" />
+                    <h3 class="text-[23px] text-[#0b363d] font-semibold mb-4">
+                        Advanced online appointment
+                    </h3>
+                    <div class="flex justify-between">
+                        <h3>Management</h3>
+                        <img src="images//arrow-1.png" alt="" class="w-[50px]" />
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="flex flex-wrap mx-[-15px] items-center">
+                <div class="lg:w-3/12 md:w-6/12 w-full mb-3 lg:mb-0 px-3.5">
+                    <div class="about-style-two bg-[#fff9f5] rounded-lg px-[70px] py-[70px]">
+                        <img src="images/users.png" alt="" class="mb-4 w-[40px]" />
+                        <h3 class="text-[23px] text-[#0b363d] font-semibold mb-4">
+                            Multiple user & management
+                        </h3>
+                        <div class="flex justify-between">
+                            <h3>Multi User</h3>
+                            <img src="images/arrow-1.png" alt="" class="w-[50px]" />
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 md:w-6/12 w-full mb-3 lg:mb-0 px-3.5">
+                    <div class="about-style-two bg-[#fff9f5] rounded-lg px-[68px] py-[68px]">
+                        <img src="images/creativity.png" alt="" class="mb-4 w-[38px]" />
+                        <h3 class="text-[23px] text-[#0b363d] font-semibold mb-4">
+                            Editable & highly customizable
+                        </h3>
+                        <div class="flex justify-between">
+                            <h3>Customization</h3>
+                            <img src="images/arrow-1.png" alt="" class="w-[50px]" />
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 md:w-6/12 w-full mb-3 lg:mb-0 px-3.5">
+                    <div class="about-style-two bg-[#fff9f5] rounded-lg px-[60px] py-[60px]">
+                        <img src="images/cloud-lock.png" alt="" class="mb-4 w-[59px]" />
+                        <h3 class="text-[23px] text-[#0b363d] font-semibold mb-4">
+                            Superfast cloud data your saved
+                        </h3>
+                        <div class="flex justify-between">
+                            <h3>Cloud Server</h3>
+                            <img src="images/arrow-1.png" alt="" class="w-[50px]" />
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 md:w-6/12 w-full px-3.5">
+                    <div class="about-style-two bg-[#fff9f5] rounded-lg px-[55px] py-[55px]">
+                        <img src="images/appoinment.png" alt="" class="mb-4 w-[58px]" />
+                        <h3 class="text-[23px] text-[#0b363d] font-semibold mb-4">
+                            User Next Level Interface Site
+                        </h3>
+                        <div class="flex justify-between">
+                            <h3>Website</h3>
+                            <img src="images/arrow-1.png" alt="" class="w-[50px]" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="sec-3 py-[100px] bg-[#fff9f5]">
+        <div class="main-container">
+            <div  class="flex flex-wrap mx-[-15px] items-center justify-between">
+                <div class="lg:w-5/12 w-full mb-5 px-3.5">
+                    <div>
+                        <h4 class="text-[#ff8945] font-semibold text-[17px] tracking-wide mb-4">STRUCTURE</h4>
+                        <h3 class="font-semibold text-[42px] text-[#0b363d] mb-4">Discover All <span class="text-[#ff8945] text-line">Our
+                                Features</span></h3>
+                        <p class="text-[#616c6e] text-[17px] font-normal">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                            temporibus autem.</p>
+
+                            <div class="flex flex-wrap mx-[-15px] items-cente mt-5">
+                                <div class="md:w-6/12 w-full px-3.5">
+                                    <div class="mb-3">
+                                        <h3 class="flex items-center gap-2 text-[#0b363d] font-semibold text-[18px]"><span
+                                                class="text-[#ff8945]"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" />
+                                                </svg></span>Trends Tracking</h3>
+                                    </div>
+                                </div>
+                                <div class="md:w-6/12 w-full px-3.5">
+                                    <div class="mb-3">
+                                        <h3 class="flex items-center gap-2 text-[#0b363d] font-semibold text-[18px]"><span
+                                                class="text-[#ff8945]"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" />
+                                                </svg></span>Loyalty Programs</h3>
+                                    </div>
+                                </div>
+                                <div class="md:w-6/12 w-full px-3.5">
+                                    <div class="mb-3">
+                                        <h3 class="flex items-center gap-2 text-[#0b363d] font-semibold text-[18px]"><span
+                                                class="text-[#ff8945]"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" />
+                                                </svg></span>Vendor Management </h3>
+                                    </div>
+                                </div>
+                                <div class="md:w-6/12 w-full px-3.5">
+                                    <div class="mb-3">
+                                        <h3 class="flex items-center gap-2 text-[#0b363d] font-semibold text-[18px]"><span
+                                                class="text-[#ff8945]"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" />
+                                                </svg></span>Billing</h3>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+
+                <div class="lg:w-6/12 w-full mb-5 px-3.5">
+                    <div>
+                        <img src="images/dashbord-3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class=" sec-4  bg-white py-[50px]">
+        <div class="main-container">
+            <div class="flex flex-wrap mx-[-15px] items-center justify-between">
+                <div class="lg:w-6/12 w-full mb-5 px-3.5">
+                    <div>
+                        <img src="images/dashbord-4.png" alt="">
+                    </div>
+                </div>
+                <div class="lg:w-5/12 w-full mb-5 px-3.5">
+                    <div>
+                        <h4 class="text-[#ff8945] font-semibold text-[17px] tracking-wide mb-4">
+                            PERFORMANCE METRICS
+                        </h4>
+                        <h3 class="font-semibold text-[40px] text-[#0b363d] mb-4">
+                            Grow Up Your Business With In
+                            <span class="text-[#ff8945] text-line">5 Minutes</span>
+                        </h3>
+                        <p class="text-[#616c6e] text-[17px] font-normal">
+                            The passage experienced a surge in popularity during the 1960s
+                            when Letraset used it on their dry-transfer sheets, and again
+                            during the 90s as desktop publishers bundled the text with their
+                            software.
+                        </p>
+                        <div class="flex flex-wrap mx-[-15px] items-cente my-5">
+                            <div class="md:w-6/12 w-full px-3.5">
+                                <div class="mb-3">
+                                    <h3 class="text-[#0b363d] font-bold text-[25px]">200K</h3>
+                                    <p class="text-[#212529bf] text-[18px]">
+                                        Active user from the community
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="md:w-6/12 w-full px-3.5">
+                                <div class="mb-3">
+                                    <h3 class="text-[#0b363d] font-bold text-[25px]">
+                                        90%
+                                        <span class="text-[#212529bf] text-[1rem]">(Positive Reating)</span>
+                                    </h3>
+                                    <ul class="flex text-[#ff8945]">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="m12 18.26l-7.053 3.948l1.575-7.928L.588 8.792l8.027-.952L12 .5l3.385 7.34l8.027.952l-5.934 5.488l1.575 7.928z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="m12 18.26l-7.053 3.948l1.575-7.928L.588 8.792l8.027-.952L12 .5l3.385 7.34l8.027.952l-5.934 5.488l1.575 7.928z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="m12 18.26l-7.053 3.948l1.575-7.928L.588 8.792l8.027-.952L12 .5l3.385 7.34l8.027.952l-5.934 5.488l1.575 7.928z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="m12 18.26l-7.053 3.948l1.575-7.928L.588 8.792l8.027-.952L12 .5l3.385 7.34l8.027.952l-5.934 5.488l1.575 7.928z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="m12 15.968l4.247 2.377l-.948-4.773l3.573-3.305l-4.833-.573l-2.038-4.419zm0 2.292l-7.053 3.948l1.575-7.928L.588 8.792l8.027-.952L12 .5l3.385 7.34l8.027.952l-5.934 5.488l1.575 7.928z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="flex items-center gap-2 mb-3">
+                                <span class="text-[#ff8945b3]"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10">
+                                        </path>
+                                    </svg></span>
+                                <h3 class="text-[#141822] font-normal text-[18px]">
+                                    Get Overview at a glance.
+                                </h3>
+                            </li>
+                            <li class="flex items-center gap-2 mb-3">
+                                <span class="text-[#ff8945b3]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10">
+                                        </path>
+                                    </svg></span>
+                                <h3 class="text-[#141822] font-normal text-[18px]">
+                                    Deposite funds easily, security.
+                                </h3>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#ff8945b3]"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10">
+                                        </path>
+                                    </svg></span>
+                                <h3 class="text-[#141822] font-normal text-[18px]">
+                                    First Working Process.
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-5  bg-[#0b363d] py-[50px]">
+        <div class="main-container">
+            <div class="flex flex-wrap mx-[-15px] items-center">
+                <div class="lg:w-3/12 w-6/12 mb-5 px-3.5">
+                    <div class="text-center">
+                        <div class="p-[28px] rounded-lg bg-[#d1e7dd] inline-block mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                class="text-[#0b363d] text-[40px]">
+                                <path fill="currentColor"
+                                    d="M12 11a5 5 0 0 1 5 5v6h-2v-6a3 3 0 0 0-2.824-2.995L12 13a3 3 0 0 0-2.995 2.824L9 16v6H7v-6a5 5 0 0 1 5-5m-6.5 3q.42.001.81.094a6 6 0 0 0-.301 1.575L6 16v.086a1.5 1.5 0 0 0-.356-.08L5.5 16a1.5 1.5 0 0 0-1.493 1.355L4 17.5V22H2v-4.5A3.5 3.5 0 0 1 5.5 14m13 0a3.5 3.5 0 0 1 3.5 3.5V22h-2v-4.5a1.5 1.5 0 0 0-1.355-1.493L18.5 16q-.264.001-.5.085V16c0-.666-.108-1.306-.308-1.904c.258-.063.53-.096.808-.096m-13-6a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m13 0a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m-13 2a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1m13 0a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1M12 2a4 4 0 1 1 0 8a4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4a2 2 0 0 0 0-4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h1 class="text-white font-bold text-[30px]">100,000+</h1>
+                        <p class="text-[#ffffff80] text-[17px] font-normal">
+                            No. of People Join
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 w-6/12 mb-5 px-3.5">
+                    <div class="text-center">
+                        <div class="p-[20px] rounded-lg bg-[#d1e7dd] inline-block mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                class="text-[#0b363d] text-[40px]">
+                                <path fill="currentColor"
+                                    d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m1 2v14h14V5zm6.003 11L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h1 class="text-white font-bold text-[30px]">120+</h1>
+                        <p class="text-[#ffffff80] text-[17px] font-normal">
+                            Countries Reached
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 w-6/12 mb-5 px-3.5">
+                    <div class="text-center">
+                        <div class="p-[20px] rounded-lg bg-[#d1e7dd] inline-block mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                class="text-[#0b363d] text-[40px]">
+                                <path fill="currentColor"
+                                    d="m17 9.2l5.213-3.65a.5.5 0 0 1 .787.41v12.08a.5.5 0 0 1-.787.41L17 14.8V19a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1zm0 3.159l4 2.8V8.84l-4 2.8zM3 6v12h12V6zm2 2h2v2H5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h1 class="text-white font-bold text-[30px]">425,000+</h1>
+                        <p class="text-[#ffffff80] text-[17px] font-normal">
+                            No. of Sessions Given
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 w-6/12 mb-5 px-3.5">
+                    <div class="text-center">
+                        <div class="p-[20px] rounded-lg bg-[#d1e7dd] inline-block mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                class="text-[#0b363d] text-[40px]">
+                                <path fill="currentColor"
+                                    d="M6 4H4V2h16v2h-2v2c0 1.615-.816 2.915-1.844 3.977c-.703.726-1.558 1.395-2.425 2.023c.867.628 1.722 1.297 2.425 2.023C17.184 15.085 18 16.385 18 18v2h2v2H4v-2h2v-2c0-1.615.816-2.915 1.844-3.977c.703-.726 1.558-1.395 2.425-2.023c-.867-.628-1.722-1.297-2.425-2.023C6.816 8.915 6 7.615 6 6zm2 0v2c0 .685.26 1.335.771 2h6.458c.51-.665.771-1.315.771-2V4zm4 9.222c-1.045.738-1.992 1.441-2.719 2.192a7 7 0 0 0-.51.586h6.458a7 7 0 0 0-.51-.586c-.727-.751-1.674-1.454-2.719-2.192">
+                                </path>
+                            </svg>
+                        </div>
+                        <h1 class="text-white font-bold text-[30px]">500K</h1>
+                        <p class="text-[#ffffff80] text-[17px] font-normal"> Hour of work </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" sec-6 bg-[#fff9f5] py-[70px]">
+        <div class="main-container">
+            <div class="text-center mb-5">
+                <h3 class="text-[#ff8945] font-bold text-[17px] tracking-wide mb-3">
+                    OUR PRICING
+                </h3>
+                <h2 class="text-[42px] text-[#0b363d] font-semibold lg:w-6/12 mx-auto">
+                    Choose The Plan That's Right For
+                    <span class="text-line text-[#ff8945]">Your Business</span>
+                </h2>
+            </div>
+            <div class="flex flex-wrap mx-[-15px] items-center">
+                <div class="lg:w-4/12 md:w-6/12 w-full mb-5 px-3.5">
+                    <div class="rounded-lg bg-white about-style-two">
+                        <div class="p-[20px]">
+                            <div class="bg-[#fff9f5] p-[10px] rounded mb-4">
+                                <h3 class="text-[#0b363d] font-bold text-[23px] mb-3">
+                                    Free
+                                </h3>
+                                <p class="text-[17px] text-[#616c6e] font-normal">
+                                    Explore the products and power small personal projects
+                                </p>
+                            </div>
+                            <div class="p-[15px]">
+                                <h1 class="text-[#0b363d] font-bold text-[2.5rem] mb-2">
+                                    $ 0<span class="text-[#212529bf] text-[1rem]">/ Month</span>
+                                </h1>
+                                <p class="text-[#141822] text-[17px] font-normal mb-4">
+                                    Includes :
+                                </p>
+                                <ul>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        limited Encrypts
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        250 Decrypts
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        1,00 Function Runs
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf]">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        1 Environment
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-[#21252908] p-8">
+                            <div class="text-center">
+                                <a href="#"
+                                    class="inline-block btn-2 btn border text-[#0b363d] py-2 px-5 text-[15px] font-[500] rounded border-[#0b363d]">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 md:w-6/12 w-full mb-5 px-3.5">
+                    <div class="rounded-lg bg-white about-style-two">
+                        <div class="p-[20px]">
+                            <div class="bg-[#0b363d] p-[10px] rounded mb-4">
+                                <h3 class="text-white font-bold text-[23px] mb-3">
+                                    Pro
+                                </h3>
+                                <p class="text-[17px] text-white font-normal">
+                                    Run production apps with full functionality in best price.
+                                </p>
+                            </div>
+                            <div class="p-[15px]">
+                                <h1 class="text-[#0b363d] font-bold text-[2.5rem] mb-2">
+                                    $ 90<span class="text-[#212529bf] text-[1rem]">/ Month</span>
+                                </h1>
+                                <p class="text-[#141822] text-[17px] font-normal mb-4">
+                                    Includes :
+                                </p>
+                                <ul>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        Unlimited Encrypts
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        250 Decrypts
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        1,00 Function Runs
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf]">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        1 Environment
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-[#21252908] p-8">
+                            <div class="text-center">
+                                <a href="#"
+                                    class="inline-block btn-2 btn border bg-[#0b363d] text-white py-2 px-5 text-[15px] font-[500] rounded border-[#0b363d]">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 md:w-6/12 w-full  mb-5 px-3.5">
+                    <div class="rounded-lg bg-white about-style-two">
+                        <div class="p-[20px]">
+                            <div class="bg-[#fff9f5] p-[10px] rounded mb-4">
+                                <h3 class="text-[#0b363d] font-bold text-[23px] mb-3">
+                                    Enterprise
+                                </h3>
+                                <p class="text-[17px] text-[#616c6e] font-normal">
+                                    Explore the products and power small personal projects
+                                </p>
+                            </div>
+                            <div class="p-[15px]">
+                                <h1 class="text-[#0b363d] font-bold text-[2.5rem] mb-2">
+                                    $ 190<span class="text-[#212529bf] text-[1rem]">/ Month</span>
+                                </h1>
+                                <p class="text-[#141822] text-[17px] font-normal mb-4">
+                                    Includes :
+                                </p>
+                                <ul>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        limited Encrypts
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        250 Decrypts
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf] mb-4">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        1,00 Function Runs
+                                    </li>
+                                    <li class="flex gap-3 items-center text-[17px] text-[#212529bf]">
+                                        <span class="text-[#0b363d] text-[20px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-.997-4L6.76 11.757l1.414-1.414l2.829 2.829l5.657-5.657l1.414 1.414z">
+                                                </path>
+                                            </svg></span>
+                                        1 Environment
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-[#21252908] p-8">
+                            <div class="text-center">
+                                <a href="#"
+                                    class="inline-block btn-2 btn border text-[#0b363d] py-2 px-5 text-[15px] font-[500] rounded border-[#0b363d]">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class=" sec-7 py-[70px]  behind-text">
+        <div class="main-container">
+            <div class="text-center mb-[50px]">
+                <h3 class="text-[#ff8945] font-bold text-[17px] tracking-wide mb-3">
+                    NEED SUPPORT
+                </h3>
+                <h2 class="text-[42px] text-[#0b363d] font-semibold">
+                    Frequently asked
+                    <span class="text-line text-[#ff8945]">Questions</span>
+                </h2>
+            </div>
+            <div class="flex flex-wrap mx-[-15px] items-center justify-between">
+                <div class="lg:w-5/12  w-full  mb-5 px-3.5">
+                    <div class="mb-[40px]">
+                        <h2 class="flex items-center mb-2 gap-4 font-bold text-[#0b363d] text-[1.25rem]"><span
+                                class="flex items-center justify-center w-[40px] bg-[#d1e7dd] text-[#0b363d] rounded-[50%] p-[7px] text-[20px]">1</span>
+                            How Benefit That I Got When Choose Basic Plan</h2>
+                        <p class="text-[#616c6e] font-normal text-[18px] ms-[50px]">Contrary to this, individuals above this
+                            tax bracket of 30% can benefit from low basic pay. This is because the or retirement benefits
+                            have to be approximately 27% of the basic pay.</p>
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="flex items-center mb-2 gap-4 font-bold text-[#0b363d] text-[1.25rem]"><span
+                                class="flex items-center justify-center w-[40px] bg-[#d1e7dd] text-[#0b363d] rounded-[50%] p-[7px] text-[20px]">2</span>
+                            How Do I Organize My Notes?</h2>
+                        <p class="text-[#616c6e] font-normal text-[18px] ms-[50px]">Try using coloured paper so that all
+                            related notes are made on sheets of the same colour. Some notebooks have different colours and
+                            have the advantage of keeping all your notes in one place.</p>
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="flex items-center mb-2 gap-4 font-bold text-[#0b363d] text-[1.25rem]"><span
+                                class="flex items-center justify-center w-[40px] bg-[#d1e7dd] text-[#0b363d] rounded-[50%] p-[7px] text-[20px]">3</span>How
+                            Long For A Standard Project</h2>
+                        <p class="text-[#616c6e] font-normal text-[18px] ms-[50px]">Typically, an average project will take
+                            in the region of three four months. Some of our projects are small, fully specified and are
+                            completed in four six weeks. Others can take six months or much longer.</p>
+                    </div>
+                </div>
+                <div class="lg:w-5/12  w-full  mb-5 px-3.5">
+                    <div class="mb-[40px]">
+                        <h2 class="flex items-center mb-2 gap-4 font-bold text-[#0b363d] text-[1.25rem]"><span
+                                class="flex items-center justify-center w-[40px] bg-[#d1e7dd] text-[#0b363d] rounded-[50%] p-[7px] text-[20px]">4</span>How
+                            Do I Change My Email or Password?</h2>
+                        <p class="text-[#616c6e] font-normal text-[18px] ms-[50px]">You can change your Webmail password in
+                            the one.com control panel under Email if you have forgotten it. Here you can manage all email
+                            accounts on your domain.</p>
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="flex items-center mb-2 gap-4 font-bold text-[#0b363d] text-[1.25rem]"><span
+                                class="flex items-center justify-center w-[40px] bg-[#d1e7dd] text-[#0b363d] rounded-[50%] p-[7px] text-[20px]">5</span>
+                            Can I Lock My Note App?</h2>
+                        <p class="text-[#616c6e] font-normal text-[18px] ms-[50px]">Through the collaboration with customers
+                            in discussing needs and demand, we're able to attain mutual understanding, gain customer trust
+                            to offer appropriate advice.</p>
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="flex items-center mb-2 gap-4 font-bold text-[#0b363d] text-[1.25rem]"><span
+                                class="flex items-center justify-center w-[40px] bg-[#d1e7dd] text-[#0b363d] rounded-[50%] p-[7px] text-[20px]">6</span>Can
+                            My Premium License Be Used For All Devices?</h2>
+                        <p class="text-[#616c6e] font-normal text-[18px] ms-[50px]">The Remote Access License is an
+                            endpoint-based license designated for a single user. It allows to the user remotely connect to a
+                            maximum of 3 devices from an unlimited number of devices..</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="faq-background-text lg:block hidden">
+            FaQ's
+        </div>
+    </section>
+
+<section class="sec-8   py-[55px] bg-[#fff9f5]">
+    <div class="main-container">
+        <div class="flex flex-wrap mx-[-15px] items-center">
+            <div class="lg:w-4/12 md:w-6/12 w-full mb-5 px-3.5">
+                <div class="flex gap-5 items-center bg-white py-6 px-4 shadow-sm ">
+               <a href="#"><img src="images/download.png" alt="" class="that" width="50px"></a>
+                    <div>
+                        <h2 class="text-[#0b363d] text-[1.5rem] font-semibold">
+                            Office address
+                        </h2>
+                        <p class="text-[#0b363d] font-normal text-[18px]">
+                            2 Holt Street, Surry Hills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-4/12 md:w-6/12 w-full mb-5 px-3.5">
+                <div class="flex gap-5 items-center bg-white py-6 px-4 shadow-sm">
+                 <a href="#"><img src="images/images.png" alt="" class="that" width="50px"></a>
+                    <div>
+                        <h2 class="text-[#0b363d] text-[1.5rem] font-semibold">
+                            Telephone number
+                        </h2>
+                        <p class="text-[#0b363d] font-normal text-[18px]">
+                            1-888-452-1505
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-4/12 md:w-6/12 w-full mb-5 px-3.5">
+                <div class="flex gap-5 items-center bg-white py-6 px-4 shadow-sm">
+                    <a href="#"><img src="images/download.jpeg" alt="" class="that" width="60px"></a>
+                    <div>
+                        <h2 class="text-[#0b363d] text-[1.5rem] font-semibold">
+                            Mail address
+                        </h2>
+                        <p class="text-[#0b363d] font-normal text-[18px]">
+                            supprot22@gmail.coms
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-[#0b363d] py-[50px]">
+        <div class="main-container">
+            <div class="flex flex-wrap mx-[15px] justify-between">
+                <div class="lg:w-4/12 w-full">
+                    <div class="lg:mb-0 mb-[30px]">
+                        <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                height="1em" viewBox="0 0 24 24" class="text-3xl text-[#FF8845]">
+                                <path fill="currentColor"
+                                    d="m12 16l3 6H9zm-2.627.255a5 5 0 1 1 5.255 0l-1.356-2.711a2 2 0 1 0-2.544 0zm-2.241 4.482A10 10 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a10 10 0 0 1-5.131 8.737l-1.344-2.688a7 7 0 1 0-7.05 0z">
+                                </path>
+                            </svg>
+                            <span class="text-3xl text-white">LOXCY</span></a>
+                        <div class="flex mt-[20px]">
+                            <img src="images/twitter-xxl.png" class="icon-4 me-[15px]">
+                            <p class="text-[17px] font-normal text-[#ffffff80]">Greater pleasures el
+                                esndures pains avoid welcomed avoided pariatu.
+                            </p>
+                        </div>
+                        <h2 class="text-white font-normal text-[25px] mb-4">Subscribe to our Site :
+                        </h2>
+                        <div class="relative email mb-5">
+                            <input type="text" placeholder="Enter email"
+                                class="w-full py-4 px-4 bg-[#81d86f1a] text-white border-black outline-0 rounded-md" />
+                            <a href="#" class="bg-[#FF8845] inline-block text-white py-3 px-8 rounded absolute right-[14px] bottom-[8px]"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M3.5 1.346a.5.5 0 0 1 .241.061l18.462 10.155a.5.5 0 0 1 0 .876L3.741 22.592A.5.5 0 0 1 3 22.154V1.846a.5.5 0 0 1 .5-.5M5 4.382V11h5v2H5v6.617L18.85 12z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="#"><p class="text-[#ffffff80!important] font-normal text-[17px] mt-[30px]">
+                            ©
+                            2024Laxcy-Created By<span
+                                class="underline decoration-white decoration-solid text-white ms-[10px]">Themdesigne</span>
+                        </p></a>
+    
+    
+    
+                    </div>
+    
+                </div>
+                <div class="lg:w-2/12 md:w-6/12 w-full">
+                    <div class="lg:mb-0 mb-[30px]">
+                      <a href="#"><h2 class="text-[25px] text-white font-normal">Company : </h2></a>
+                        <ul>
+                            <li class="mt-[20px]  "><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white ">Company
+                                    Proile</a></li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Help
+                                    Center</a></li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Services</a>
+                            </li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Plans$Pricing</a>
+                            </li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Team
+                                    Members</a></li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Contact</a>
+                            </li>
+                        </ul>
+    
+    
+                    </div>
+    
+    
+                </div>
+                <div class="lg:w-2/12 md:w-6/12 w-full">
+                    <div class="lg:mb-0 mb-[30px]">
+                        <a href="#"><h2 class="text-[25px] text-white font-normal">Community : </h2></a>
+                        <ul>
+                            <li class="mt-[20px]  "><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white ">Carear</a>
+                            </li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Leadership</a>
+                            </li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Press $
+                                    Media</a></li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Projects</a>
+                            </li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Markiting
+                                    Services</a></li>
+                            <li class="mt-[20px]"><a href="#"
+                                    class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Chanllenge
+                                    of Projct</a></li>
+                        </ul>
+    
+                    </div>
+    
+                </div>
+                <div class="lg:w-2/12 md:w-6/12 w-full">
+                 <a href="#"><h2 class="text-[25px] text-white font-normal">Solution : </h2></a>
                     <ul>
-                        <li>
-                            <div class="label">Days</div>
-                            <span id="days">00</span>
+                        <li class="mt-[20px]  "><a href="#"
+                                class="text-[#ffffff80] text-[18px] inline-block hover:text-white ">Small
+                                Bussiness</a></li>
+                        <li class="mt-[20px]"><a href="#"
+                                class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Ebook
+                                Library</a></li>
+                        <li class="mt-[20px]"><a href="#"
+                                class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Free Theme</a>
                         </li>
-                        <li class="separator">:</li>
-                        <li>
-                            <div class="label">Hours</div>
-                            <span id="hours">00</span>
+                        <li class="mt-[20px]"><a href="#"
+                                class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Affiliates</a>
                         </li>
-                        <li class="separator">:</li>
-                        <li>
-                            <div class="label">Minutes</div>
-                            <span id="minutes">00</span>
+                        <li class="mt-[20px]"><a href="#"
+                                class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Testimonial</a>
                         </li>
-                        <li class="separator">:</li>
-                        <li>
-                            <div class="label">Seconds</div>
-                            <span id="seconds">00</span>
+                        <li class="mt-[20px]"><a href="#"
+                                class="text-[#ffffff80] text-[18px] inline-block hover:text-white">Themes</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="mb-[60px]">
-                <div class="swiper mySwiper-2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div>
-                                <div class="relative add-cart duration-500 transition">
-                                    <img src="images/Frame 570 (1).svg" alt="" class="w-full mb-2" />
-                                    <a href="#"
-                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                        To Cart</a>
-                                </div>
-                                <div>
-                                    <h3 class="text-base text-black font-normal mb-1">
-                                        HAVIT HV-G92 Gamepad
-                                    </h3>
-                                    <h5>
-                                        <span class="text-[#DB4444]">$120</span><span
-                                            class="text-[#000000] ms-2 line-through">$160</span>
-                                    </h5>
-                                    <img src="images/Five star.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <div class="relative add-cart duration-500 transition">
-                                    <img src="images/Frame 570.svg" alt="" class="w-full mb-2" />
-                                    <a href="#"
-                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                        To Cart</a>
-                                </div>
-                                <div>
-                                    <h3 class="text-base text-black font-normal mb-1">
-                                        HAVIT HV-G92 Gamepad
-                                    </h3>
-                                    <h5>
-                                        <span class="text-[#DB4444]">$120</span><span
-                                            class="text-[#000000] ms-2 line-through">$160</span>
-                                    </h5>
-                                    <img src="images/Five star.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <div class="relative add-cart duration-500 transition">
-                                    <img src="images/Frame 570 (2).svg" alt="" class="w-full mb-2" />
-                                    <a href="#"
-                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                        To Cart</a>
-                                </div>
-                                <div>
-                                    <h3 class="text-base text-black font-normal mb-1">
-                                        S-Series Comfort Chair
-                                    </h3>
-                                    <h5>
-                                        <span class="text-[#DB4444]">$120</span><span
-                                            class="text-[#000000] ms-2 line-through">$160</span>
-                                    </h5>
-                                    <img src="images/Five star.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <div class="relative add-cart duration-500 transition">
-                                    <img src="images/Frame 570 (1).svg" alt="" class="w-full mb-2" />
-                                    <a href="#"
-                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                        To Cart</a>
-                                </div>
-                                <div>
-                                    <h3 class="text-base text-black font-normal mb-1">
-                                        HAVIT HV-G92 Gamepad
-                                    </h3>
-                                    <h5>
-                                        <span class="text-[#DB4444]">$120</span><span
-                                            class="text-[#000000] ms-2 line-through">$160</span>
-                                    </h5>
-                                    <img src="images/Five star.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <div class="relative add-cart duration-500 transition">
-                                    <img src="images/Frame 570 (1).svg" alt="" class="w-full mb-2" />
-                                    <a href="#"
-                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                        To Cart</a>
-                                </div>
-                                <div>
-                                    <h3 class="text-base text-black font-normal mb-1">
-                                        HAVIT HV-G92 Gamepad
-                                    </h3>
-                                    <h5>
-                                        <span class="text-[#DB4444]">$120</span><span
-                                            class="text-[#000000] ms-2 line-through">$160</span>
-                                    </h5>
-                                    <img src="images/Five star.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <div class="relative add-cart duration-500 transition">
-                                    <img src="images/Frame 570.svg" alt="" class="w-full mb-2" />
-                                    <a href="#"
-                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                        To Cart</a>
-                                </div>
-                                <div>
-                                    <h3 class="text-base text-black font-normal mb-1">
-                                        HAVIT HV-G92 Gamepad
-                                    </h3>
-                                    <h5>
-                                        <span class="text-[#DB4444]">$120</span><span
-                                            class="text-[#000000] ms-2 line-through">$160</span>
-                                    </h5>
-                                    <img src="images/Five star.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <div class="relative add-cart duration-500 transition">
-                                    <img src="images/Frame 570 (2).svg" alt="" class="w-full mb-2" />
-                                    <a href="#"
-                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                        To Cart</a>
-                                </div>
-                                <div>
-                                    <h3 class="text-base text-black font-normal mb-1">
-                                        S-Series Comfort Chair
-                                    </h3>
-                                    <h5>
-                                        <span class="text-[#DB4444]">$120</span><span
-                                            class="text-[#000000] ms-2 line-through">$160</span>
-                                    </h5>
-                                    <img src="images/Five star.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <div class="relative add-cart duration-500 transition">
-                                    <img src="images/Frame 570 (1).svg" alt="" class="w-full mb-2" />
-                                    <a href="#"
-                                        class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                        To Cart</a>
-                                </div>
-                                <div>
-                                    <h3 class="text-base text-black font-normal mb-1">
-                                        HAVIT HV-G92 Gamepad
-                                    </h3>
-                                    <h5>
-                                        <span class="text-[#DB4444]">$120</span><span
-                                            class="text-[#000000] ms-2 line-through">$160</span>
-                                    </h5>
-                                    <img src="images/Five star.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev btn"></div>
-                    <div class="swiper-button-next btn"></div>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <a href="#"
-                    class="bg-[#DB4444] text-white text-base font-normal inline-block px-[30px] py-[12px] rounded">View
-                    All Products</a>
+    
+    
             </div>
         </div>
-   </section> 
-
-    <section class="sec-3  py-[60px] border-t-[0.5px] border-[#00000038]"> 
-        <div class="main-container">
-            <div class="flex gap-3 items-center mb-3">
-                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
-                <h4 class="text-[#DB4444] text-base">Categories</h4>
-            </div>
-            <h2 class="text-black text-[36px] font-semibold">Browse By Category</h2>
-
-            <div class="mt-[40px]">
-                <div class="swiper mySwiper-3">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"
-                                        class="text-[55px] group-hover:text-white">
-                                        <path fill="currentColor"
-                                            d="M10.25 2A3.25 3.25 0 0 0 7 5.25v21.5A3.25 3.25 0 0 0 10.25 30h11.5A3.25 3.25 0 0 0 25 26.75V5.25A3.25 3.25 0 0 0 21.75 2zM9 5.25C9 4.56 9.56 4 10.25 4h11.5c.69 0 1.25.56 1.25 1.25v21.5c0 .69-.56 1.25-1.25 1.25h-11.5C9.56 28 9 27.44 9 26.75zM14 24a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" />
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">Phones</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                        class="text-[55px] group-hover:text-white">
-                                        <path fill="currentColor"
-                                            d="M20 2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6v2H7v2h10v-2h-3v-2h6a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m0 14H4V4h16z" />
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">Computers</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"
-                                        class="text-[55px] group-hover:text-white">
-                                        <path fill="currentColor"
-                                            d="M6 5.268V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1.268A2 2 0 0 1 15 7v1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v2a2 2 0 0 1-1 1.732V16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1.268A2 2 0 0 1 5 13V7a2 2 0 0 1 1-1.732M8 3a1 1 0 0 0-1 1v1h6V4a1 1 0 0 0-1-1zm6 10V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v6a1 1 0 0 0 .999 1H13a1 1 0 0 0 1-1m-7 3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H7z" />
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">SmartWatch</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                        viewBox="0 0 256 256" class="text-[55px] group-hover:text-white">
-                                        <path fill="currentColor"
-                                            d="M208 60h-29.87l-14.81-22.22A4 4 0 0 0 160 36H96a4 4 0 0 0-3.32 1.78L77.85 60H48a20 20 0 0 0-20 20v112a20 20 0 0 0 20 20h160a20 20 0 0 0 20-20V80a20 20 0 0 0-20-20m12 132a12 12 0 0 1-12 12H48a12 12 0 0 1-12-12V80a12 12 0 0 1 12-12h32a4 4 0 0 0 3.33-1.78L98.13 44h59.72l14.82 22.22A4 4 0 0 0 176 68h32a12 12 0 0 1 12 12ZM128 92a40 40 0 1 0 40 40a40 40 0 0 0-40-40m0 72a32 32 0 1 1 32-32a32 32 0 0 1-32 32" />
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">Camera</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                        class="text-[55px] group-hover:text-white">
-                                        <g fill="none">
-                                            <path stroke="currentColor" stroke-linecap="round"
-                                                d="M21 15v-3a9 9 0 1 0-18 0v3" />
-                                            <path fill="currentColor"
-                                                d="M3 15v-.5h-.5v.5zm0 .5h3v-1H3zm3.5.5v3h1v-3zm-3 3v-4h-1v4zM5 20.5A1.5 1.5 0 0 1 3.5 19h-1A2.5 2.5 0 0 0 5 21.5zM6.5 19A1.5 1.5 0 0 1 5 20.5v1A2.5 2.5 0 0 0 7.5 19zM6 15.5a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 6 14.5zm15-.5h.5v-.5H21zm-3 .5h3v-1h-3zm2.5-.5v4h1v-4zm-3 4v-3h-1v3zm1.5 1.5a1.5 1.5 0 0 1-1.5-1.5h-1a2.5 2.5 0 0 0 2.5 2.5zm1.5-1.5a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5zM18 14.5a1.5 1.5 0 0 0-1.5 1.5h1a.5.5 0 0 1 .5-.5z" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">HeadPhones</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14"
-                                        class="text-[55px] group-hover:text-white">
-                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path
-                                                d="M4.579 6.126v2.786M3.186 7.519h2.786M.5 7a4.643 4.643 0 0 0 4.643 4.643h4.643a3.714 3.714 0 1 0-.856-7.33A4.643 4.643 0 0 0 .5 7" />
-                                            <path
-                                                d="M9.131 7.853a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m2.139.25a.125.125 0 1 1 0-.25m0 .25a.125.125 0 0 0 0-.25m-1.045-.797a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m0 2.388a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">Gaming</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"
-                                        class="text-[55px] group-hover:text-white">
-                                        <path fill="currentColor"
-                                            d="M10.25 2A3.25 3.25 0 0 0 7 5.25v21.5A3.25 3.25 0 0 0 10.25 30h11.5A3.25 3.25 0 0 0 25 26.75V5.25A3.25 3.25 0 0 0 21.75 2zM9 5.25C9 4.56 9.56 4 10.25 4h11.5c.69 0 1.25.56 1.25 1.25v21.5c0 .69-.56 1.25-1.25 1.25h-11.5C9.56 28 9 27.44 9 26.75zM14 24a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" />
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">Phones</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                        class="text-[55px] group-hover:text-white">
-                                        <path fill="currentColor"
-                                            d="M20 2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6v2H7v2h10v-2h-3v-2h6a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m0 14H4V4h16z" />
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">Computers</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"
-                                        class="text-[55px] group-hover:text-white">
-                                        <path fill="currentColor"
-                                            d="M6 5.268V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1.268A2 2 0 0 1 15 7v1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v2a2 2 0 0 1-1 1.732V16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1.268A2 2 0 0 1 5 13V7a2 2 0 0 1 1-1.732M8 3a1 1 0 0 0-1 1v1h6V4a1 1 0 0 0-1-1zm6 10V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v6a1 1 0 0 0 .999 1H13a1 1 0 0 0 1-1m-7 3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H7z" />
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">SmartWatch</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                        viewBox="0 0 256 256" class="text-[55px] group-hover:text-white">
-                                        <path fill="currentColor"
-                                            d="M208 60h-29.87l-14.81-22.22A4 4 0 0 0 160 36H96a4 4 0 0 0-3.32 1.78L77.85 60H48a20 20 0 0 0-20 20v112a20 20 0 0 0 20 20h160a20 20 0 0 0 20-20V80a20 20 0 0 0-20-20m12 132a12 12 0 0 1-12 12H48a12 12 0 0 1-12-12V80a12 12 0 0 1 12-12h32a4 4 0 0 0 3.33-1.78L98.13 44h59.72l14.82 22.22A4 4 0 0 0 176 68h32a12 12 0 0 1 12 12ZM128 92a40 40 0 1 0 40 40a40 40 0 0 0-40-40m0 72a32 32 0 1 1 32-32a32 32 0 0 1-32 32" />
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">Camera</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                        class="text-[55px] group-hover:text-white">
-                                        <g fill="none">
-                                            <path stroke="currentColor" stroke-linecap="round"
-                                                d="M21 15v-3a9 9 0 1 0-18 0v3" />
-                                            <path fill="currentColor"
-                                                d="M3 15v-.5h-.5v.5zm0 .5h3v-1H3zm3.5.5v3h1v-3zm-3 3v-4h-1v4zM5 20.5A1.5 1.5 0 0 1 3.5 19h-1A2.5 2.5 0 0 0 5 21.5zM6.5 19A1.5 1.5 0 0 1 5 20.5v1A2.5 2.5 0 0 0 7.5 19zM6 15.5a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 6 14.5zm15-.5h.5v-.5H21zm-3 .5h3v-1h-3zm2.5-.5v4h1v-4zm-3 4v-3h-1v3zm1.5 1.5a1.5 1.5 0 0 1-1.5-1.5h-1a2.5 2.5 0 0 0 2.5 2.5zm1.5-1.5a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5zM18 14.5a1.5 1.5 0 0 0-1.5 1.5h1a.5.5 0 0 1 .5-.5z" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">HeadPhones</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="text-center border border-[#0000004d] py-[20px] px-[30px] rounded group hover:bg-[#DB4444]">
-                                <div class="flex justify-center mb-[20px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14"
-                                        class="text-[55px] group-hover:text-white">
-                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path
-                                                d="M4.579 6.126v2.786M3.186 7.519h2.786M.5 7a4.643 4.643 0 0 0 4.643 4.643h4.643a3.714 3.714 0 1 0-.856-7.33A4.643 4.643 0 0 0 .5 7" />
-                                            <path
-                                                d="M9.131 7.853a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m2.139.25a.125.125 0 1 1 0-.25m0 .25a.125.125 0 0 0 0-.25m-1.045-.797a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m0 2.388a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <h2 class="text-black text-base font-normal group-hover:text-white">Gaming</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev btn"></div>
-                    <div class="swiper-button-next btn"></div>
-                </div>
-            </div>
-        </div>
-    </section> 
-
-     <section class="sec-4  py-[60px] border-t-[0.5px] border-[#00000038]"> 
-        <div class="main-container">
-            <div class="flex gap-3 items-center mb-3">
-                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
-                <h4 class="text-[#DB4444] text-base">This Month</h4>
-            </div>
-            <div class="flex justify-between items-center mb-[30px]">
-                <h2 class="text-black text-[36px] font-semibold">Best Selling Products</h2>
-                <a href="#" class="text-white bg-[#DB4444] text-base rounded py-3 px-8 inline-block">View All</a>
-            </div>
-
-            <div class="flex flex-wrap mx-[-15px]">
-                <div class="lg:w-3/12  w-6/12 px-3.5 mb-3 lg:mb-0">
-                    <div>
-                        <img src="images/Cart.svg" alt="" class="mb-2">
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                The north coat
-                            </h3>
-                            <h5>
-                                <span class="text-[#DB4444]">$260</span><span
-                                    class="text-[#000000] ms-2 line-through">$360</span>
-                            </h5>
-                            <img src="images/Five star.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12  w-6/12 px-3.5 mb-3 lg:mb-0">
-                    <div>
-                        <img src="images/Cart (1).svg" alt="" class="mb-2">
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                Gucci duffle bag
-                            </h3>
-                            <h5>
-                                <span class="text-[#DB4444]">$960</span><span
-                                    class="text-[#000000] ms-2 line-through">$1160</span>
-                            </h5>
-                            <img src="images/Five star.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12  w-6/12 px-3.5 mb-3 lg:mb-0">
-                    <div>
-                        <img src="images/Cart (2).svg" alt="" class="mb-2">
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                RGB liquid CPU Cooler
-                            </h3>
-                            <h5>
-                                <span class="text-[#DB4444]">$160</span><span
-                                    class="text-[#000000] ms-2 line-through">$170</span>
-                            </h5>
-                            <img src="images/Five star.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12  w-6/12 px-3.5 mb-3 lg:mb-0">
-                    <div>
-                        <img src="images/Cart (3).svg" alt="" class="mb-2">
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                Small BookSelf
-                            </h3>
-                            <h5>
-                                <span class="text-[#DB4444]">$360</span>
-                            </h5>
-                            <img src="images/Five star.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section> 
-
-     <section class="sec-5  py-[60px] sound">
-        <div class="main-container">
-            <div class="flex flex-wrap mx-[-15px] items-center justify-between">
-                <div class="lg:w-5/12 md:w-6/12 w-full px-3.5">
-                    <div>
-                        <h4 class="text-[#00FF66] text-base font-semibold mb-5">Categories</h4>
-                        <h2 class="text-[#FAFAFA] text-[36px] lg:text-[48px] font-semibold tracking-wider mb-5">Enhance
-                            Your Music Experience</h2>
-                        <div class="flex items-center gap-2 mb-8">
-                            <div class="w-[70px] h-[70px] bg-white text-center rounded-full">
-                                <h6 class="text-black mt-3  text-base font-semibold">23</h6>
-                                <p class="text-black  text-[13px] font-semibold">Hours</p>
-                            </div>
-                            <div class="w-[70px] h-[70px] bg-white text-center rounded-full">
-                                <h6 class="text-black mt-3 text-base font-semibold">05</h6>
-                                <p class="text-black  text-[13px] font-semibold">Days</p>
-                            </div>
-                            <div class="w-[70px] h-[70px] bg-white text-center rounded-full">
-                                <h6 class="text-black mt-3 text-base font-semibold">58</h6>
-                                <p class="text-black text-[13px] font-semibold">Minutes</p>
-                            </div>
-                            <div class="w-[70px] h-[70px] bg-white text-center rounded-full">
-                                <h6 class="text-black mt-3  text-base font-semibold">23</h6>
-                                <p class="text-black text-[13px] font-semibold">Seconds</p>
-                            </div>
-                        </div>
-                        <a href="#"
-                            class="text-white bg-[#00FF66] text-center py-[12px] px-[40px] inline-block rounded">Buy
-                            Now!</a>
-                    </div>
-                </div>
-                <div class="lg:w-6/12 md:w-6/12 w-full px-3.5">
-                    <div>
-                        <img src="images/Frame 694.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-
-    <section class=" sec-6 py-[60px]"> 
-        <div class="main-container">
-            <div class="flex gap-3 items-center mb-3">
-                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
-                <h4 class="text-[#DB4444] text-base">Our Products</h4>
-            </div>
-            <h2 class="text-black text-[36px] font-semibold mb-5">Explore Our Products</h2>
-            <div class="flex flex-wrap mx-[-15px] items-center">
-                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
-                    <div>
-                        <div class="relative add-cart duration-500 transition">
-                            <img src="images/dog.svg" alt="" class="w-full mb-2" />
-                            <a href="#"
-                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                To Cart</a>
-                        </div>
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                Breed Dry Dog Food
-                            </h3>
-                            <h5 class="flex items-center gap-1">
-                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
-                            </h5>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
-                    <div>
-                        <div class="relative add-cart duration-500 transition">
-                            <img src="images/laptop.svg" alt="" class="w-full mb-2" />
-                            <a href="#"
-                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                To Cart</a>
-                        </div>
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                CANON EOS DSLR Camera
-                            </h3>
-                            <h5 class="flex items-center gap-1">
-                                <span class="text-[#DB4444]">$620</span> <img src="images/Five star.svg" alt="" />
-                            </h5>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
-                    <div>
-                        <div class="relative add-cart duration-500 transition">
-                            <img src="images/laptop.svg" alt="" class="w-full mb-2" />
-                            <a href="#"
-                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                To Cart</a>
-                        </div>
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                ASUS FHD Gaming Laptop
-                            </h3>
-                            <h5 class="flex items-center gap-1">
-                                <span class="text-[#DB4444]">$620</span> <img src="images/Five star.svg" alt="" />
-                            </h5>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
-                    <div>
-                        <div class="relative add-cart duration-500 transition">
-                            <img src="images/makeup.svg" alt="" class="w-full mb-2" />
-                            <a href="#"
-                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                To Cart</a>
-                        </div>
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                Curology Product Set
-                            </h3>
-                            <h5 class="flex items-center gap-1">
-                                <span class="text-[#DB4444]">$500</span> <img src="images/Five star.svg" alt="" />
-                            </h5>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
-                    <div>
-                        <div class="relative add-cart duration-500 transition">
-                            <img src="images/car.svg" alt="" class="w-full mb-2" />
-                            <a href="#"
-                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                To Cart</a>
-                        </div>
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                Kids Electric Car
-                            </h3>
-                            <h5 class="flex items-center gap-1">
-                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
-                            </h5>
-                            <div class="flex items-center gap-2">
-                                <div
-                                    class="inline-block rounded-full w-[23px] h-[23px] text-center border-[2px] border-black">
-                                    <span class="bg-[red] inline-block rounded-full p-[8px]"></span>
-                                </div>
-                                <span class="bg-[#DB4444] inline-block rounded-full w-[20px] h-[20px] "></span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
-                    <div>
-                        <div class="relative add-cart duration-500 transition">
-                            <img src="images/shoes.svg" alt="" class="w-full mb-2" />
-                            <a href="#"
-                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                To Cart</a>
-                        </div>
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                Jr. Zoom Soccer Cleats
-                            </h3>
-                            <h5 class="flex items-center gap-1">
-                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
-                            </h5>
-                            <div class="flex items-center gap-2">
-                                <div
-                                    class="inline-block rounded-full w-[23px] h-[23px] text-center border-[2px] border-black">
-                                    <span class="bg-[#EEFF61] inline-block rounded-full p-[8px]"></span>
-                                </div>
-                                <span class="bg-[#DB4444] inline-block rounded-full w-[20px] h-[20px] "></span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12   w-6/12 px-3.5 mb-3">
-                    <div>
-                        <div class="relative add-cart duration-500 transition">
-                            <img src="images/Cart (4).svg" alt="" class="w-full mb-2" />
-                            <a href="#"
-                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                To Cart</a>
-                        </div>
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                GP11 Shooter USB Gamepad
-                            </h3>
-                            <h5 class="flex items-center gap-1">
-                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
-                            </h5>
-                            <div class="flex items-center gap-2">
-                                <div
-                                    class="inline-block rounded-full w-[23px] h-[23px] text-center border-[2px] border-black">
-                                    <span class="bg-black inline-block rounded-full p-[8px]"></span>
-                                </div>
-                                <span class="bg-[#DB4444] inline-block rounded-full w-[20px] h-[20px] "></span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-3/12   w-6/12 px-3.5">
-                    <div>
-                        <div class="relative add-cart duration-500 transition">
-                            <img src="images/Cart (5).svg" alt="" class="w-full mb-2" />
-                            <a href="#"
-                                class="bg-black text-white text-base font-medium absolute bottom-[4px] left-0 right-0 text-center p-2 z-[-1] opacity-0 transition-opacity duration-500">Add
-                                To Cart</a>
-                        </div>
-                        <div>
-                            <h3 class="text-base text-black font-normal mb-1">
-                                Quilted Satin Jacket
-                            </h3>
-                            <h5 class="flex items-center gap-1">
-                                <span class="text-[#DB4444]">$120</span> <img src="images/Five star.svg" alt="" />
-                            </h5>
-                            <div class="flex items-center gap-2">
-                                <div
-                                    class="inline-block rounded-full w-[23px] h-[23px] text-center border-[2px] border-black">
-                                    <span class="bg-[green] inline-block rounded-full p-[8px]"></span>
-                                </div>
-                                <span class="bg-[#DB4444] inline-block rounded-full w-[20px] h-[20px] "></span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <a href="#" class="text-white bg-[#DB4444] py-3 px-8 inline-block rounded">View All Products</a>
-            </div>
-        </div>
-    </section> 
-
-     <section class="sec-7 py-[60px]"> 
-        <div class="main-container">
-            <div class="flex gap-3 items-center mb-3">
-                <div class="bg-[#DB4444] w-[20px] h-[35px] rounded"></div>
-                <h4 class="text-[#DB4444] text-base">Featured</h4>
-            </div>
-            <h2 class="text-black text-[36px] font-semibold mb-5">New Arrival</h2>
-
-            <div class="flex flex-wrap mx-[-15px] items-center">
-                <div class="lg:w-6/12  w-full px-3.5">
-                    <div class="bg-black pt-[60px] px-[30px] relative mb-5 lg:mb-0">
-                        <img src="images/ps5-slim-goedkope-playstation_large 1.svg" alt="">
-                        <div class="absolute bottom-[35px] left-[60px]">
-                            <h3 class="text-white text-[24px] font-semibold tracking-wider mb-4">PlayStation 5</h3>
-                            <p class="text-[#FAFAFA] text-[14px] font-normal w-[63%] mb-3">Black and White version of
-                                the PS5 coming out on sale.</p>
-                            <a href="#" class="inline-block text-[#FAFAFA] underline">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-6/12  w-full px-3.5">
-                    <div class="bg-black relative mb-5">
-                        <div class="flex justify-end">
-                            <img src="images/attractive-woman-wearing-hat-posing-black-background 1.svg" alt="">
-                        </div>
-                        <div class="absolute bottom-[35px] left-[35px]">
-                            <h3 class="text-white text-[24px] font-semibold tracking-wider mb-4">Women’s Collections
-                            </h3>
-                            <p class="text-[#FAFAFA] text-[14px] font-normal w-[63%] mb-3">Featured woman collections
-                                that give you another vibe.</p>
-                            <a href="#" class="inline-block text-[#FAFAFA] underline">Shop Now</a>
-                        </div>
-                    </div>
-                    <div class="flex mx-[-15px] items-center">
-                        <div class="w-6/12 px-3.5">
-                            <div class="bg-black p-[23px] relative">
-                                <img src="images/Frame 707.svg" alt="">
-                                <div class="absolute bottom-[15px] left-[35px]">
-                                    <h3 class="text-white text-[24px] font-semibold tracking-wider mb-1">Speakers</h3>
-                                    <p class="text-[#FAFAFA] text-[14px] font-normal  mb-1">Amazon wireless speakers</p>
-                                    <a href="#" class="inline-block text-[#FAFAFA] underline">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-6/12 px-3.5">
-                            <div class="bg-[#000000d9] p-[23px] relative">
-                                <img src="images/Frame 706.svg" alt="">
-                                <div class="absolute bottom-[15px] left-[35px]">
-                                    <h3 class="text-white text-[24px] font-semibold tracking-wider mb-1">Perfume</h3>
-                                    <p class="text-[#FAFAFA] text-[14px] font-normal  mb-1">GUCCI INTENSE OUD EDP</p>
-                                    <a href="#" class="inline-block text-[#FAFAFA] underline">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-     </section> 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".mySwiper-2", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                },
-            },
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".mySwiper-3", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 6,
-                    spaceBetween: 50,
-                },
-            },
-        });
-    </script>
+    
+    </footer>
     <script>
         var menu = document.getElementById("menu-bar");
         function toggleMenu() {
@@ -1113,47 +1103,7 @@
                 menu.classList.add("show");
             }
         }
+
     </script>
-    <script>
-        (function () {
-            const second = 1000,
-                minute = second * 60,
-                hour = minute * 60,
-                day = hour * 24;
-
-            let today = new Date(),
-                dd = String(today.getDate()).padStart(2, "0"),
-                mm = String(today.getMonth() + 1).padStart(2, "0"),
-                yyyy = today.getFullYear(),
-                nextYear = yyyy + 1,
-                dayMonth = "09/30/",
-                birthday = dayMonth + yyyy;
-
-            today = mm + "/" + dd + "/" + yyyy;
-            if (today > birthday) {
-                birthday = dayMonth + nextYear;
-            }
-
-            const countDown = new Date(birthday).getTime(),
-                x = setInterval(function () {
-                    const now = new Date().getTime(),
-                        distance = countDown - now;
-
-                    document.getElementById("days").innerText = String(
-                        Math.floor(distance / day)
-                    ).padStart(2, "0");
-                    document.getElementById("hours").innerText = String(
-                        Math.floor((distance % day) / hour)
-                    ).padStart(2, "0");
-                    document.getElementById("minutes").innerText = String(
-                        Math.floor((distance % hour) / minute)
-                    ).padStart(2, "0");
-                    document.getElementById("seconds").innerText = String(
-                        Math.floor((distance % minute) / second)
-                    ).padStart(2, "0");
-                }, 1000);
-        })();
-    </script>
-</body>
-
-</html>
+    </body>
+    </html>
